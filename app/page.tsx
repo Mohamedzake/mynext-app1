@@ -3,7 +3,10 @@
 
 export default function Home() {
   return (
-    <a className="flex justify-center items-center h-screen" href="/[lang]">
+    <a
+      className="flex justify-center items-center h-screen"
+      href="/[lang]/cabins"
+    >
       Language
     </a>
   );

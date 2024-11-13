@@ -10,7 +10,7 @@ export default function HomePage({ params }) {
 
   const toggleLanguage = () => {
     const newLang = params.lang === "en" ? "ar" : "en";
-    router.push(`/${newLang}`);
+    router.push(`/${newLang}/cabins`);
   };
 
   return (

@@ -4,8 +4,8 @@ import "./globals.css";
 import { i18n } from "@/i18n-config";
 import { Josefin_Sans } from "next/font/google";
 import { IntlProvider } from "next-intl";
-import enMessages from "@/dictionaries/en.json";
-import arMessages from "@/dictionaries/ar.json";
+import enMessages from "@/public/dictionaries/en.json";
+import arMessages from "@/public/dictionaries/ar.json";
 import { useParams } from "next/navigation";
 
 const josefin = Josefin_Sans({
