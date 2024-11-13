@@ -1,5 +1,10 @@
-import Image from "next/image";
+// import Image from "next/image";
+"use client";
 
 export default function Home() {
-  return <h1>hello</h1>;
+  return (
+    <a className="flex justify-center items-center h-screen" href="/[lang]">
+      Language
+    </a>
+  );
 }
