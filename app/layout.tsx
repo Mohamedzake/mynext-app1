@@ -1,7 +1,12 @@
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { i18n } from "@/i18n-config";
 import { Josefin_Sans } from "next/font/google";
+import { IntlProvider } from "next-intl";
+import enMessages from "@/dictionaries/en.json";
+import arMessages from "@/dictionaries/ar.json";
+import { useParams } from "next/navigation";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -9,35 +14,41 @@ const josefin = Josefin_Sans({
 });
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+const metadata = {
   title: "UDO | Dashboard",
-
   icons: {
     icon: "/logo.png",
   },
 };
 
-export async function generateStaticParams() {
+function generateStaticParams() {
   return i18n.locales.map((locale) => ({
     lang: locale,
   }));
 }
 
-export default function RootLayout({ children, modal, params }) {
-  console.log(params);
+export default function RootLayout({ children }) {
+  const { lang } = useParams();
+  console.log(lang);
+  const params = {
+    lang: lang,
+  };
+  const locale = params.lang || "en";
+  const messages = locale === "en" ? enMessages : arMessages;
+  console.log(params.lang);
   return (
     <html
-      dir={params.lang === "en" ? "ltr" : "rtl"}
-      lang={params.lang}
+      dir={locale === "en" ? "ltr" : "rtl"}
+      lang={locale}
       suppressHydrationWarning
     >
       <head></head>
       <body
-        className={`${josefin.className}
-       antialiased bg-primary-950 text-primary-100
-         min-h-screen flex flex-col relative`}
+        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
       >
-        {children}
+        <IntlProvider locale={locale} messages={messages}>
+          {children}
+        </IntlProvider>
       </body>
     </html>
   );
