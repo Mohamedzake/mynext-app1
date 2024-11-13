@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
+import { Button } from "@/components/ui/button";
 export default function HomePage({ params }) {
   const router = useRouter();
 
@@ -12,8 +12,9 @@ export default function HomePage({ params }) {
 
   return (
     <div>
-      <button onClick={toggleLanguage}>Toggle Language</button>
-
+      <Button className="mt-4" onClick={toggleLanguage}>
+        Toggle Language
+      </Button>
       {params.lang === "en" ? "Our Story" : "قصتنا"}
     </div>
   );
