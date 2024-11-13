@@ -1,0 +1,70 @@
+{
+  "Home": {
+    "Title": "الرئسيىة",
+    "Description": "هذه هي صفحنما الرئسيىة"
+  },
+  "competition": {
+    "Name of competition English": "اسم المسابقة بالانجليزية",
+    "Name of competition Arabic": "اسم المسابقة عربي",
+    "The description of competition English": "الوصف انجليزي",
+    "The description of competition Arabic": "الوصف عربي",
+    "start Time": "بداية الوقت",
+    "Competition title": "عنوان المسابقة",
+    "Competition description": "وصف المسابقة",
+    "Description": "وصف المسابقة",
+    "type": "نوع المسابقة",
+    "status": "حالة المسابقة",
+    "start time": "بداية الوقت",
+    "end time": "نهاية الوقت",
+    "Brand": "ماركة",
+    "Status": "حالة",
+    "Actions": "الإجراءات",
+    "Branch": "فرع",
+    "number of winners": "عدد الفائزين",
+    "Prizes": "الجوائز",
+    "Prize type": "نوع المكافآت",
+    "Prize number": "عدد المكافآت",
+    "Add prize": "إضافة مكافآت",
+    "gold": "ذهب",
+    "Rules": "قواعد",
+    "Brands": "ماركات"
+  },
+  "brand": {
+    "Item_name": "أسم البراند",
+    "Item_description": "وصف البراند",
+    "Item_comptitions": "المسابقات",
+    "Item_reviewNumbers": "ارقام المراجعة",
+    "Actions": "الإجراءات"
+  },
+  "errorMessages": {
+    "searching": "لا توجد عناصر مطابقة لبحثك",
+    "getting": "لا توجد عناصر"
+  },
+
+  "BrandsLayout": {
+    "TotalReactions": "مجموع التفاعلات ",
+    "competionsnumber": "عدد المسابقات الحالي"
+  },
+  "category": {
+    "categorty Name": "اسم الفئة",
+    "Category Name English": "اسم الفئة بالإنجليزية",
+    "Category Name Arabic": "اسم الفئة بالعربية",
+    "Update": "تحديث",
+    "loading": "جاري التحميل",
+    "add": "إضافة"
+  },
+
+  "user": {
+    "name": "الأسم",
+    "email": "البريد الإلكترونى",
+    "numberPhone": "رقم الجوال",
+    "gender": "الجنس",
+    "age": "العمر",
+    "actions": "الإجراءات",
+    "noWinnersError": "لا يوجد فائزين لهذا المستخدم",
+    "noReviewsError": "لا توجد منشورات للمستخدم",
+    "status": "حاله المستخدم",
+    "transiaction": "حاله الدفع"
+
+  }
+}

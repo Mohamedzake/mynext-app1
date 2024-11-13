@@ -1,0 +1,74 @@
+
+"use server"
+
+import { baseUrl } from "@/helpers/baseUrl";
+import { cookies } from "next/headers";
+
+ 
+export async function loginServer(formData) {
+
+  try {
+    const response = await fetch(`${baseUrl}/auth/login`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify(formData),
+      credentials: "include",
+    });
+    const data = await response.json();
+    
+     const Sesions=response.headers.get("set-cookie").split(';');
+ 
+     if (response?.ok) {
+      // const cookiesD = response.headers.get("Set-Cookie");
+      cookies().set("role", data?.data.role);
+      cookies().set("session",Sesions[0].split("=")[1]);
+      cookies().set("session.sig",Sesions[5].split(',')[1].split(['='])[1]);
+      cookies().set("expireDate", headers?.split(";")[2].split("=")[1]);
+    }
+
+    
+    return data;
+  } catch (error) {
+    console.log(error)
+    return {
+      status: "error",
+      error_en: "Error in Login",
+      error_ar: "خطا في تسجيل الدخول",
+    };
+  }
+}
+
+/* 
+uploadingAssets
+-----------------
+  Receive two arguments contains endpoint and file
+  -
+  endpoint: route of crud operation;
+  uploadedFile: uploaded file;
+  -
+  Methods : 'POST
+
+*/
+
+export const uploadingAssets = async (endpoint, uploadedFile) => {
+  const session = Cookies.get(`session`);
+  const sessionSig = Cookies.get("session.sig");
+  const formData = new FormData();
+  formData.append("image", uploadedFile);
+  try {
+    const response = await fetch(baseUrl + endpoint, {
+      method: "POST",
+      headers: {
+        Cookie: `session=${session}; session.sig=${sessionSig}`,
+      },
+      body: formData,
+      credentials: "include",
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
