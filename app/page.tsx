@@ -4,21 +4,25 @@ import Header from "@/app/_components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import bg from "@/public/bg.png";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
     <div>
-      <main className="mt-5">
-        <Image
-          src={bg}
-          fill
-          placeholder="blur"
-          quality={80}
-          className="object-cover"
-          alt="Mountains and forests with two cabins"
-        />
+      <main className="relative pt-8 h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src={bg}
+            layout="fill"
+            placeholder="blur"
+            quality={80}
+            className="object-cover"
+            alt="Mountains and forests with two cabins"
+          />
+        </div>
+
         <Header />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8 mt-40">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-50 mb-10 tracking-tight font-bold leading-tight">
             حل متكامل لإدارة مبيعاتك <br /> بكفاءة، سلاسة، منهجية.
           </h1>
@@ -42,6 +46,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import im from "@/public/auth-logo.svg";
 import Image from "next/image";
+import Footer from "./Footer";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ function Header() {
   console.log(isLang);
   return (
     <header
-      className={`bg-white shadow-lg py-2 z-10 relative mb-10 ${
+      className={`bg-white shadow-lg py-2 z-10 relative ${
         isMenuOpen ? "mx-8 rounded-none" : "mx-8 rounded-l-full rounded-r-full"
       }`}
     >
