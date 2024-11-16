@@ -104,11 +104,11 @@ function Header() {
           <div className="text-gray-700 text-2xl font-semibold">
             <Image
               src={im}
-              width={60}
-              height={60}
+              width={100}
+              height={100}
               quality={80}
               alt="Logo"
-              className="w-14 h-14 object-contain"
+              className="object-contain"
             />
           </div>
         </div>
