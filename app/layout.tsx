@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang={currentLocale}
-      dir={currentLocale === "en" ? "ltr" : "rtl"}
+      // dir={currentLocale === "en" ? "ltr" : "rtl"}
       suppressHydrationWarning
     >
       <body
