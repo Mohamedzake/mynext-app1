@@ -1,8 +1,33 @@
 {
-  "contact_us": "Contact Us",
-  "articles": "Articles",
-  "packages": "Packages",
-  "solutions": "Solutions",
-  "about_us": "About Us",
-  "home": "Home"
+  "home": {
+    "start_now": "Start Now",
+    "arabic": "Arabic",
+    "english": "English",
+    "contact_us": "Contact Us",
+    "articles": "Articles",
+    "packages": "Packages",
+    "solutions": "Solutions",
+    "about_us": "About Us",
+    "home": "home",
+    "main_title": "A Complete Solution to Manage Your Sales",
+    "main_subtitle": "Efficiently, Smoothly, Methodically.",
+    "description": "The My Cash system is designed to improve payment and sales management and streamline operations according to professional standards and deep expertise.",
+    "learn_more": "Learn More",
+    "get_trial": "Get Your Trial"
+  },
+
+  "footer": {
+    "download_app": "Download My Cash App for Android",
+    "download_button": "Download on Google Play",
+    "solutions_title": "Solutions",
+    "payment_solutions": "Payment Solutions",
+    "cash_ai": "My Cash AI",
+    "my_cash_title": "My Cash",
+    "about_us": "About Us",
+    "our_vision": "Our Vision and Mission",
+    "our_partners": "Our Partners",
+    "packages": "Packages",
+    "contact_us": "Contact Us",
+    "footer_description": "My Cash system is designed to improve payment and sales management and streamline operations according to professional standards and deep expertise."
+  }
 }

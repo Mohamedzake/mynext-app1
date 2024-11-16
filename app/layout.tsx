@@ -98,10 +98,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const [mounted, setMounted] = useState(false);
-  const [currentLocale, setCurrentLocale] = useState("en");
+  const [currentLocale, setCurrentLocale] = useState("ar");
 
   useEffect(() => {
-    // Get preferences from localStorage on mount
     const storedPrefs = localStorage.getItem("userPreferences");
     if (storedPrefs) {
       const { language } = JSON.parse(storedPrefs);
@@ -112,11 +111,11 @@ export default function RootLayout({ children }) {
 
   if (!mounted) {
     return (
-      <html lang="en" suppressHydrationWarning>
+      <html lang="ar" suppressHydrationWarning>
         <body
           className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
         >
-          <IntlProvider locale="en" messages={enMessages}>
+          <IntlProvider locale="ar" messages={arMessages}>
             {children}
           </IntlProvider>
         </body>

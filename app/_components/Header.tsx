@@ -7,8 +7,8 @@ import { useTranslations } from "next-intl";
 import { i18n } from "@/i18n-config";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLang, setIsLang] = useState(false);
-  const t = useTranslations();
+  const [currentLocale, setCurrentLocale] = useState();
+  const t = useTranslations("home");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,10 +21,18 @@ function Header() {
       JSON.stringify({ language: newLanguage })
     );
     window.location.reload();
-    setIsLang(!isLang);
   };
-  console.log(isLang);
 
+  ///////////////////////////////
+
+  useEffect(() => {
+    const storedPrefs = localStorage.getItem("userPreferences");
+    if (storedPrefs) {
+      const { language } = JSON.parse(storedPrefs);
+      setCurrentLocale(language);
+    }
+  }, [setCurrentLocale]);
+  console.log(currentLocale);
   return (
     <header
       className={`bg-white shadow-lg py-2 z-10 relative ${
@@ -34,24 +42,25 @@ function Header() {
       <div className="container mx-auto px-6 py-1 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">
-            ابدأ الآن
+            {t("start_now")}
           </button>
-
-          <a
-            onClick={() => updateLanguage("ar")}
-            className="text-gray-600 hover:underline"
-            href="#"
-          >
-            العربية
-          </a>
-
-          {/* <a
-            onClick={() => updateLanguage("en")}
-            className="text-gray-600 hover:underline"
-            href="#"
-          >
-            english
-          </a> */}
+          {currentLocale === "en" ? (
+            <a
+              onClick={() => updateLanguage("ar")}
+              className="text-gray-600 hover:underline"
+              href="#"
+            >
+              {t("arabic")}
+            </a>
+          ) : (
+            <a
+              onClick={() => updateLanguage("en")}
+              className="text-gray-600 hover:underline"
+              href="#"
+            >
+              {t("english")}
+            </a>
+          )}
         </div>
 
         <nav className="hidden md:flex md:items-center space-x-6">
@@ -108,31 +117,27 @@ function Header() {
       {isMenuOpen && (
         <nav className="md:hidden px-8 py-4 bg-white   flex flex-col space-y-2 mt-4">
           <a className="text-gray-600 hover:underline" href="#">
-            تواصل معنا
+            {t("contact_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            المقالات
+            {t("articles")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الباقات
+            {t("packages")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الحلول
+            {t("solutions")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            من نحن
+            {t("about_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الرئيسية
+            {t("home")}
           </a>
         </nav>
       )}
     </header>
   );
-
-  // function newFunction(): { i18n: any } {
-  //   return useTranslations();
-  // }
 }
 
 export default Header;
