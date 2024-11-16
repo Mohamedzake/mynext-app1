@@ -1,6 +1,8 @@
 {
-  "Title": "مرحبا بك  ",
-  "toggleLanguage": "تبديل اللغة",
-  "ourStory": "قصتنا",
-  "backToHome": "العودة إلى الصفحة الرئيسية"
+  "contact_us": "تواصل معنا",
+  "articles": "المقالات",
+  "packages": "الباقات",
+  "solutions": "الحلول",
+  "about_us": "من نحن",
+  "home": "الرئيسية"
 }

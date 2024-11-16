@@ -1,6 +1,8 @@
 {
-  "Title": "Welcome to UDO Dashboard",
-  "toggleLanguage": "Toggle Language",
-  "ourStory": "Our Story",
-  "backToHome": "Back to Home"
+  "contact_us": "Contact Us",
+  "articles": "Articles",
+  "packages": "Packages",
+  "solutions": "Solutions",
+  "about_us": "About Us",
+  "home": "Home"
 }

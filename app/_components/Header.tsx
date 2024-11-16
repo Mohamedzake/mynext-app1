@@ -1,18 +1,30 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import im from "@/public/auth-logo.svg";
 import Image from "next/image";
-import Footer from "./Footer";
-
+import { useTranslations } from "next-intl";
+// import { useTranslation } from "react-i18next";
+import { i18n } from "@/i18n-config";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLang, setIsLang] = useState(false);
+  const t = useTranslations();
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const toggleLang = () => {
+
+  /////////////////////////////
+  const updateLanguage = (newLanguage: string) => {
+    localStorage.setItem(
+      "userPreferences",
+      JSON.stringify({ language: newLanguage })
+    );
+    window.location.reload();
     setIsLang(!isLang);
   };
   console.log(isLang);
+
   return (
     <header
       className={`bg-white shadow-lg py-2 z-10 relative ${
@@ -24,33 +36,42 @@ function Header() {
           <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">
             ابدأ الآن
           </button>
+
           <a
-            onClick={toggleLang}
+            onClick={() => updateLanguage("ar")}
             className="text-gray-600 hover:underline"
             href="#"
           >
             العربية
           </a>
+
+          {/* <a
+            onClick={() => updateLanguage("en")}
+            className="text-gray-600 hover:underline"
+            href="#"
+          >
+            english
+          </a> */}
         </div>
 
         <nav className="hidden md:flex md:items-center space-x-6">
           <a className="text-gray-600 hover:underline" href="#">
-            تواصل معنا
+            {t("contact_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            المقالات
+            {t("articles")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الباقات
+            {t("packages")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الحلول
+            {t("solutions")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            من نحن
+            {t("about_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
-            الرئيسية
+            {t("home")}
           </a>
         </nav>
 
@@ -108,6 +129,10 @@ function Header() {
       )}
     </header>
   );
+
+  // function newFunction(): { i18n: any } {
+  //   return useTranslations();
+  // }
 }
 
 export default Header;
