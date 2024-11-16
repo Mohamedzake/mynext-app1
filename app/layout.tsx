@@ -87,7 +87,7 @@ import { Josefin_Sans } from "next/font/google";
 import { IntlProvider } from "next-intl";
 import enMessages from "@/public/dictionaries/en.json";
 import arMessages from "@/public/dictionaries/ar.json";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -96,7 +96,7 @@ const josefin = Josefin_Sans({
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState(false);
   const [currentLocale, setCurrentLocale] = useState("ar");
 
