@@ -36,14 +36,16 @@ function Header() {
   return (
     <header
       className={`bg-white shadow-lg py-2 z-10 relative ${
-        isMenuOpen ? "mx-8 rounded-none" : "mx-8 rounded-l-full rounded-r-full"
+        isMenuOpen ? "rounded-none" : "md:mx-8 rounded-l-full rounded-r-full"
       }`}
     >
       <div className="container mx-auto px-6 py-1 flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">
-            {t("start_now")}
-          </button>
+          {!isMenuOpen && (
+            <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all hidden sm:block">
+              {t("start_now")}
+            </button>
+          )}
           {currentLocale === "en" ? (
             <a
               onClick={() => updateLanguage("ar")}
@@ -116,6 +118,9 @@ function Header() {
 
       {isMenuOpen && (
         <nav className="md:hidden px-8 py-4 bg-white   flex flex-col space-y-2 mt-4">
+          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">
+            {t("start_now")}
+          </button>
           <a className="text-gray-600 hover:underline" href="#">
             {t("contact_us")}
           </a>
