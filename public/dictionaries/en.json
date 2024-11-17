@@ -15,7 +15,26 @@
     "learn_more": "Learn More",
     "get_trial": "Get Your Trial"
   },
-
+  "solutions": {
+    "discover_our_solutions": "Discover Our Solutions",
+    "control_store_payments": "Easily manage your store payments with MyCash Solutions",
+    "dummy_text": "(Lorem Ipsum) is simply dummy text used in the printing and typesetting industry.",
+    "pos_solutions": "Point of Sale Solutions",
+    "sales_solutions": "Sales Solutions",
+    "get_your_trial": "Get Your Trial",
+    "learn_more": "Learn More"
+  },
+  "featuresSection": {
+    "exclusive_features": "Exclusive Features",
+    "enhance_your_business": "Enhance Your Business with My Cash Features",
+    "enhance_performance": "Enhance your performance using advanced features provided by the My Cash application.",
+    "instant_invoice_option": "Instant Invoice Option",
+    "instant_invoice_description": "Enjoy issuing invoices instantly after every sale. Stay up-to-date with all financial details and simplify the management of your sales directly and easily.",
+    "live_report_generation": "Live Report Generation",
+    "live_report_description": "Get accurate and instant reports with real-time updates. Track your business performance, monitor sales, inventory, and profits to gain precise insights and make quick decisions.",
+    "smooth_inventory_management": "Smooth Inventory Management",
+    "smooth_inventory_description": "Manage your inventory smoothly and accurately with real-time updates, helping you track available quantities, ensuring efficient organization, and avoiding any shortages or excess in stock."
+  },
   "footer": {
     "download_app": "Download My Cash App for Android",
     "download_button": "Download on Google Play",

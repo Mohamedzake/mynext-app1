@@ -6,7 +6,8 @@ import Link from "next/link";
 import bg from "@/public/bg.png";
 import Footer from "./_components/Footer";
 import { useTranslations } from "next-intl";
-
+import Solutions from "@/app/_components/Solutions";
+import FeaturesSection from "@/app/_components/FeaturesSection";
 export default function Home() {
   const t = useTranslations("home");
 
@@ -48,6 +49,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <Solutions />
+      <FeaturesSection />
 
       <Footer />
     </div>

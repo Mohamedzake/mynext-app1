@@ -113,7 +113,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
       <html lang="ar" suppressHydrationWarning>
         <body
-          className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
+          className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
         >
           <IntlProvider locale="ar" messages={arMessages}>
             {children}
@@ -132,7 +132,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       suppressHydrationWarning
     >
       <body
-        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
+        className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
       >
         <IntlProvider locale={currentLocale} messages={messages}>
           {children}
