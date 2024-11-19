@@ -38,8 +38,9 @@ export default function Missions() {
           </div>
         </div>
         {/* ////////////// */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right">
+          <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right order-2 lg:order-1">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-20 mb-4">
               {t("vision")}
             </h3>
@@ -47,16 +48,14 @@ export default function Missions() {
               {t("leadership_in_technology")}
             </p>
           </div>
-          <div>
-            <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 mb-6">
-              <Image
-                src={posImage}
-                alt="حلول نقاط البيع"
-                className="rounded-lg"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
+          <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 mb-6 order-1 lg:order-2">
+            <Image
+              src={posImage}
+              alt="حلول نقاط البيع"
+              className="rounded-lg"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </div>
       </div>

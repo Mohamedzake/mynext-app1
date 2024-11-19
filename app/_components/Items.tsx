@@ -1,45 +1,51 @@
 import Image from "next/image";
-import posImage from "@/public/about-1.jpg";
+
 import tes from "@/public/tes.webp";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 const YourComponent = () => {
-  // const t = useTranslations("about_my_cash");
+  const t = useTranslations("items");
   return (
     <div className="flex justify-center mt-20 mb-14 bg-primary-10">
-      <div className="flex w-full px-8">
+      <div className="flex w-full px-20 gap-4 flex-col lg:flex-row ">
         {/* Left Column */}
-        <div className="w-1/4 flex flex-col gap-6 items-center space-y-4">
+        <div className="w-full lg:w-1/4 flex flex-col gap-6 items-center space-y-4 order-3 lg:order-1">
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">04</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.04")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">05</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.05")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">06</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.06")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
         </div>
 
         {/* Center Image */}
-        <div className="w-1/2 flex justify-center items-center">
+        <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2 mb-6 lg:mb-0">
           <Image
             src={tes}
             alt="Central Image"
@@ -50,32 +56,38 @@ const YourComponent = () => {
         </div>
 
         {/* Right Column */}
-        <div className="w-1/4 flex flex-col gap-6 items-center space-y-4">
+        <div className="w-full lg:w-1/4 flex flex-col gap-6 items-center space-y-4 order-2 lg:order-3">
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">01</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.01")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">02</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.02")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
           <div className="flex flex-col items-end text-right">
-            <p className="text-4xl font-bold text-primary-20 mb-5">03</p>
+            <p className="text-4xl font-bold text-primary-20 mb-5">
+              {t("numbers.03")}
+            </p>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-              نظام نقاط بيع سحابي
+              {t("system_cloud_pos")}
             </h3>
             <p className="text-base md:text-lg text-gray-700">
-              إمكانية الربط الرقمي وتخزين كافة العمليات
+              {t("digital_connection")}
             </p>
           </div>
         </div>

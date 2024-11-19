@@ -57,7 +57,17 @@
     "dont_hesitate": "Don't hesitate to reach out! We are here to serve you and make your experience better",
     "contact_us": "Contact Us",
     "title": "Contact Us",
-    "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face."
+    "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face.",
+    "name": "Your Name",
+    "email": "Email",
+    "companyName": "Company Name (Optional)",
+    "phone": "Phone",
+    "yourMessage": "Your Message (Optional)",
+    "submit": "Submit",
+    "contactUs": "Contact Us Today at",
+    "phoneNumber": "Phone Number",
+    "address": "Address",
+    "addressDetails": "3273 Anas bin Malik, Al-Sahafa, 8369\nRiyadh - Saudi Arabia"
   },
   "about_my_cash": {
     "title": "About MyCash",
@@ -65,5 +75,18 @@
     "vision_mission": "Our Vision and Mission",
     "vision": "Our Vision",
     "leadership_in_technology": "Achieving leadership in empowering businesses through technology and creating a positive and sustainable impact in the local market."
+  },
+  "items": {
+    "vision": "Vision",
+    "system_cloud_pos": "Cloud POS System",
+    "digital_connection": "Ability to digitally connect and store all transactions",
+    "numbers": {
+      "04": "04",
+      "05": "05",
+      "06": "06",
+      "01": "01",
+      "02": "02",
+      "03": "03"
+    }
   }
 }
