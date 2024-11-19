@@ -121,7 +121,7 @@ function Header() {
           <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">
             {t("start_now")}
           </button>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/contacts">
             {t("contact_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
@@ -130,13 +130,13 @@ function Header() {
           <a className="text-gray-600 hover:underline" href="#">
             {t("packages")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/services">
             {t("solutions")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/about">
             {t("about_us")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/">
             {t("home")}
           </a>
         </nav>
