@@ -8,6 +8,7 @@ import Footer from "./_components/Footer";
 import { useTranslations } from "next-intl";
 import Solutions from "@/app/_components/Solutions";
 import FeaturesSection from "@/app/_components/FeaturesSection";
+// import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 export default function Home() {
   const t = useTranslations("home");
 
@@ -52,7 +53,7 @@ export default function Home() {
 
       <Solutions />
       <FeaturesSection />
-
+      {/* <FeaturesSection2 /> */}
       <Footer />
     </div>
   );

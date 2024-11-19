@@ -22,7 +22,10 @@
     "pos_solutions": "Point of Sale Solutions",
     "sales_solutions": "Sales Solutions",
     "get_your_trial": "Get Your Trial",
-    "learn_more": "Learn More"
+    "learn_more": "Learn More",
+    "access_point_services": "Access Point Services",
+    "mycash_pos_system": "MyCash POS System gives you complete control over managing all operations in your store",
+    "get_your_trial_version": "Get your trial version"
   },
   "featuresSection": {
     "exclusive_features": "Exclusive Features",
@@ -48,5 +51,19 @@
     "packages": "Packages",
     "contact_us": "Contact Us",
     "footer_description": "My Cash system is designed to improve payment and sales management and streamline operations according to professional standards and deep expertise."
+  },
+  "contact": {
+    "contact_us_now": "Contact Us Now and Start Growing Your Business",
+    "dont_hesitate": "Don't hesitate to reach out! We are here to serve you and make your experience better",
+    "contact_us": "Contact Us",
+    "title": "Contact Us",
+    "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face."
+  },
+  "about_my_cash": {
+    "title": "About MyCash",
+    "content": "MyCash was founded to meet the demand brought by the rapid growth in the business sector in the Kingdom. We have developed a system to streamline payment management and the issuance of sales invoices seamlessly. MyCash uses the latest cloud computing technologies to provide efficient and flexible solutions, making it the ideal choice for businesses looking to enhance their operational efficiency.",
+    "vision_mission": "Our Vision and Mission",
+    "vision": "Our Vision",
+    "leadership_in_technology": "Achieving leadership in empowering businesses through technology and creating a positive and sustainable impact in the local market."
   }
 }

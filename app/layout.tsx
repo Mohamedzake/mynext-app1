@@ -88,7 +88,7 @@ import { IntlProvider } from "next-intl";
 import enMessages from "@/public/dictionaries/en.json";
 import arMessages from "@/public/dictionaries/ar.json";
 import React, { useState, useEffect, ReactNode } from "react";
-
+// import Header from "@/app/_components/Header";
 const josefin = Josefin_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -135,6 +135,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
       >
         <IntlProvider locale={currentLocale} messages={messages}>
+          {/* <Header /> */}
           {children}
         </IntlProvider>
       </body>

@@ -66,7 +66,7 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex md:items-center space-x-6">
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/contacts">
             {t("contact_us")}
           </a>
           <a className="text-gray-600 hover:underline" href="#">
@@ -75,13 +75,13 @@ function Header() {
           <a className="text-gray-600 hover:underline" href="#">
             {t("packages")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/services">
             {t("solutions")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/about">
             {t("about_us")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/">
             {t("home")}
           </a>
         </nav>
