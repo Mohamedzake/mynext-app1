@@ -2,13 +2,13 @@ import { i18n } from "./i18n-config";
 
 import { NextResponse } from "next/server";
 
-const checkExpired = (date) => {
-  const currentDate = new Date();
-  const expireDate = new Date(date);
-  if (isNaN(expireDate.getTime())) return false;
+// const checkExpired = (date) => {
+//   const currentDate = new Date();
+//   const expireDate = new Date(date);
+//   if (isNaN(expireDate.getTime())) return false;
 
-  return currentDate.getTime() < expireDate.getTime();
-};
+//   return currentDate.getTime() < expireDate.getTime();
+// };
 
 export function middleware(request) {
   //Auth
@@ -18,7 +18,7 @@ export function middleware(request) {
     [
       "/manifest.json",
       "/favicon.ico",
-      
+
       "/logo.png",
       "/logo.ico",
       "/favicon.ico",
@@ -28,13 +28,12 @@ export function middleware(request) {
   )
     return;
 
-  const pathnameIsMissingLocale = i18n.locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
-  
+  // const pathnameIsMissingLocale = i18n.locales.every(
+  //   (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  // );
+
   // If there's no role or the role is not rootAdmin, redirect to sign in page
 
- 
   return NextResponse.next();
 }
 

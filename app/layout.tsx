@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       setCurrentLocale(language);
     }
     setMounted(true);
-  }, []);
+  }, [setCurrentLocale, setMounted]);
 
   if (!mounted) {
     return (
@@ -128,7 +128,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang={currentLocale}
-      // dir={currentLocale === "en" ? "ltr" : "rtl"}
+      dir={currentLocale === "en" ? "rtl" : "ltr"}
       suppressHydrationWarning
     >
       <body

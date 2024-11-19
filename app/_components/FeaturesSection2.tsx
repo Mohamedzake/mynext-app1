@@ -1,46 +1,67 @@
-import feature1 from "@/public/about-1.jpg";
-import feature2 from "@/public/about-2.jpg";
-
+import Image from "next/image";
+import Link from "next/link";
+import posImage from "@/public/tes.webp";
+import deliveryImage from "@/public/about-2.jpg";
+import { useTranslations } from "next-intl";
 export default function FeaturesSection2() {
+  const t = useTranslations("solutions");
   return (
-    <div className="bg-white py-12 sm:py-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-2xl bg-gray-200 sm:aspect-h-3 sm:aspect-w-2">
-              <img
-                src={feature1.src}
-                alt="Feature 1"
-                className="h-full w-full object-cover object-center group-hover:scale-110 transition duration-500 ease-in-out"
+    <section className="bg-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-xl text-blue-600 font-semibold mb-2">
+            {t("discover_our_solutions")}
+          </h2>
+          <h1 className="text-4xl font-bold text-gray-800">
+            {t("control_store_payments")}
+          </h1>
+          <p className="text-gray-500 max-w-2xl mx-auto mt-4">
+            {t("dummy_text")}
+          </p>
+        </div>{" "}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14">
+          <div>
+            <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 mb-6 bg-slate-100">
+              <Image
+                src={posImage}
+                alt="حلول نقاط البيع"
+                className="rounded-lg"
+                layout="fill"
+                objectFit="cover"
               />
             </div>
-            <h3 className="mt-6 text-lg font-semibold text-gray-900">
-              إمكانية الوصول للنظام من أي جهاز
-            </h3>
-            <p className="text-base text-gray-600">
-              يمكنك الوصول إلى النظام من أي جهاز كمبيوتر لوحي أو هاتف ذكي.
-              يمكانك الوصول إلى جميع البيانات والخدمات من أي مكان.
-            </p>
           </div>
 
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-2xl bg-gray-200 sm:aspect-h-3 sm:aspect-w-2">
-              <img
-                src={feature2.src}
-                alt="Feature 2"
-                className="h-full w-full object-cover object-center group-hover:scale-110 transition duration-500 ease-in-out"
-              />
-            </div>
-            <h3 className="mt-6 text-lg font-semibold text-gray-900">
-              تتبع البيانات بسرعة وسهولة
+          <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-20 mb-4">
+              {t("vision")}
             </h3>
-            <p className="text-base text-gray-600">
-              تتبع البيانات والحصول على تقارير دقيقة حول أداء التجاري وتبعية كل
-              عملية بكل سهولة وبدون تعقيد.
+            <p className="text-black text-2xl sm:text-base lg:text-2xl font-bold mb-6">
+              {t("leadership_in_technology")}
             </p>
           </div>
         </div>
+        {/* ////////////// */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right order-2 lg:order-1">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-20 mb-4">
+              {t("vision")}
+            </h3>
+            <p className="text-black text-2xl sm:text-base lg:text-2xl font-bold mb-6">
+              {t("leadership_in_technology")}
+            </p>
+          </div>
+          <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 mb-6 order-1 lg:order-2">
+            <Image
+              src={posImage}
+              alt="حلول نقاط البيع"
+              className="rounded-lg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

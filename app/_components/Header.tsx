@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import im from "@/public/auth-logo.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-// import { useTranslation } from "react-i18next";
-import { i18n } from "@/i18n-config";
+import Link from "next/link";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentLocale, setCurrentLocale] = useState();
@@ -47,43 +46,41 @@ function Header() {
             </button>
           )}
           {currentLocale === "en" ? (
-            <a
+            <button
               onClick={() => updateLanguage("ar")}
               className="text-gray-600 hover:underline"
-              href="#"
             >
               {t("arabic")}
-            </a>
+            </button>
           ) : (
-            <a
+            <button
               onClick={() => updateLanguage("en")}
               className="text-gray-600 hover:underline"
-              href="#"
             >
               {t("english")}
-            </a>
+            </button>
           )}
         </div>
 
         <nav className="hidden md:flex md:items-center space-x-6">
-          <a className="text-gray-600 hover:underline" href="/contacts">
+          <Link className="text-gray-600 hover:underline" href="/contacts">
             {t("contact_us")}
-          </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          </Link>
+          <Link className="text-gray-600 hover:underline" href="#">
             {t("articles")}
-          </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          </Link>
+          <Link className="text-gray-600 hover:underline" href="#">
             {t("packages")}
-          </a>
-          <a className="text-gray-600 hover:underline" href="/services">
+          </Link>
+          <Link className="text-gray-600 hover:underline" href="/services">
             {t("solutions")}
-          </a>
-          <a className="text-gray-600 hover:underline" href="/about">
+          </Link>
+          <Link className="text-gray-600 hover:underline" href="/about">
             {t("about_us")}
-          </a>
-          <a className="text-gray-600 hover:underline" href="/">
+          </Link>
+          <Link className="text-gray-600 hover:underline" href="/">
             {t("home")}
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-4">
