@@ -27,6 +27,17 @@
     "mycash_pos_system": "MyCash POS System gives you complete control over managing all operations in your store",
     "get_your_trial_version": "Get your trial version"
   },
+  "solutionsBlogs": {
+    "view_more_articles": "View more related articles",
+    "dummy_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+
+    "design": "Design",
+    "article_title": "Lorem Ipsum Dolor Sit Amet",
+    "article_body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s.",
+    "author_name": "Olivia Rhye",
+    "publish_date": "20 Jan 2022"
+  },
+
   "featuresSection": {
     "exclusive_features": "Exclusive Features",
     "enhance_your_business": "Enhance Your Business with My Cash Features",
@@ -88,5 +99,39 @@
       "02": "02",
       "03": "03"
     }
+  },
+  "blogs": {
+    "profile_name": "Alex Carter",
+    "profile_date": "23 January 2025",
+    "intro_paragraph_1": "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+    "intro_paragraph_2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "quote": "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable.",
+    "passion_paragraph": "His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
+    "conclusion_paragraph_1": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "conclusion_paragraph_2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+    "conclusion_paragraph_3": "Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "previous_button": "→ Previous",
+    "previous_text": "5 Tips for Better Cardio Sessions",
+    "next_button": "Next ←",
+    "next_text": "Meal Prep Basics for Gym Enthusiasts"
+  },
+  "pricing": {
+    "professional": "Professional",
+    "basic": "Basic",
+    "integrated": "Integrated",
+    "mostPopular": "Most popular ✨",
+    "perYear": "SAR/year",
+    "validForUsers": "Valid for up to 5 users",
+    "features": {
+      "addBranches": "Add 5 branches",
+      "unlimitedProducts": "Add unlimited products",
+      "unlimitedClients": "Add unlimited clients",
+      "taxInvoices": "Issuing tax invoices",
+      "simplifiedInvoices": "Issuing simplified invoices",
+      "instantInvoices": "Issuing instant invoices",
+      "taxReports": "Issuing tax reports",
+      "inventoryReports": "Issuing inventory reports"
+    },
+    "getStarted": "Get started"
   }
 }

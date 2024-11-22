@@ -66,10 +66,10 @@ function Header() {
           <Link className="text-gray-600 hover:underline" href="/contacts">
             {t("contact_us")}
           </Link>
-          <Link className="text-gray-600 hover:underline" href="#">
+          <Link className="text-gray-600 hover:underline" href="/blogs">
             {t("articles")}
           </Link>
-          <Link className="text-gray-600 hover:underline" href="#">
+          <Link className="text-gray-600 hover:underline" href="/pricing">
             {t("packages")}
           </Link>
           <Link className="text-gray-600 hover:underline" href="/services">
@@ -121,10 +121,10 @@ function Header() {
           <a className="text-gray-600 hover:underline" href="/contacts">
             {t("contact_us")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/blogs">
             {t("articles")}
           </a>
-          <a className="text-gray-600 hover:underline" href="#">
+          <a className="text-gray-600 hover:underline" href="/pricing">
             {t("packages")}
           </a>
           <a className="text-gray-600 hover:underline" href="/services">

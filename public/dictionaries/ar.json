@@ -27,6 +27,16 @@
     "mycash_pos_system": "نظام ماي كاش لإدارة نقاط البيع يتيح لك السيطرة الكاملة على إدارة كافة العمليات في متجرك",
     "get_your_trial_version": "احصل على نسختك التجريبية"
   },
+  "solutionsBlogs": {
+    "view_more_articles": "شاهد المزيد من المقالات المتعلقة",
+    "dummy_text": "لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات .",
+
+    "design": "تصميم",
+    "article_title": "لوريم إيبسوم سكاريبما",
+    "article_body": "لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات الطباعة ودور النشر. كان لوريم إيبسوم ولايزال المعيار النصي الشكلي منذ القرن.",
+    "author_name": "أوليفيا رهاي",
+    "publish_date": "20 يناير 2022"
+  },
   "featuresSection": {
     "exclusive_features": "ميزات حصرية",
     "enhance_your_business": "عزز تجارتك مع مزايا ماي كاش",
@@ -88,5 +98,39 @@
       "02": "02",
       "03": "03"
     }
+  },
+  "blogs": {
+    "profile_name": "أليكس كارتر",
+    "profile_date": "23 يناير 2025",
+    "intro_paragraph_1": "اكتشف التمارين التي تستهدف كل مجموعة عضلية، مما يساعدك على بناء القوة والتحمل. مثالي للمبتدئين والممارسين ذوي الخبرة على حد سواء.",
+    "intro_paragraph_2": "لوريم إيبسوم هو نص تجريبي يستخدم في صناعة الطباعة والنشر. أenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "quote": "مع أكثر من عقد من الخبرة في صناعة اللياقة البدنية، يتخصص أليكس في تدريب القوة واللياقة الوظيفية. معتمد من NASM ويعرف بأسلوبه التحفيزي، يقوم أليكس بتصميم برامج تدريبية تكون صعبة وقابلة للتحقيق.",
+    "passion_paragraph": "شغفه يكمن في مساعدة العملاء على بناء القوة والثقة من خلال روتين تدريب مخصص. خارج صالة الألعاب الرياضية، يعد أليكس عداءً متحمسًا ويستمتع بالمغامرات الخارجية.",
+    "conclusion_paragraph_1": "لوريم إيبسوم هو نص تجريبي في صناعة الطباعة والنشر. أenean commodo ligula eget dolor. Aenean massa.",
+    "conclusion_paragraph_2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+    "conclusion_paragraph_3": "Nulla consequat massa quis enim. لوريم إيبسوم هو نص تجريبي يستخدم في صناعة الطباعة والنشر.",
+    "previous_button": "← السابق",
+    "previous_text": "5 نصائح لتحسين جلسات الكارديو",
+    "next_button": "التالي →",
+    "next_text": "أساسيات تحضير الوجبات لمحبي الصالة الرياضية"
+  },
+  "pricing": {
+    "professional": "احترافي",
+    "basic": "أساسي",
+    "integrated": "متكامل",
+    "mostPopular": "الأكثر شعبية ✨",
+    "perYear": "ريال/سنة",
+    "validForUsers": "صالحة لغاية 5 مستخدمين",
+    "features": {
+      "addBranches": "إضافة 5 فروع",
+      "unlimitedProducts": "إضافة منتجات غير محدودة",
+      "unlimitedClients": "إضافة عملاء غير محدودين",
+      "taxInvoices": "إصدار فواتير ضريبية",
+      "simplifiedInvoices": "إصدار فواتير مبسطة",
+      "instantInvoices": "إصدار فواتير فورية",
+      "taxReports": "إصدار تقارير ضريبية",
+      "inventoryReports": "إصدار تقارير المخزون"
+    },
+    "getStarted": "ابدأ الآن"
   }
 }
