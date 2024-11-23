@@ -8,7 +8,7 @@ const PromoSection: React.FC = () => {
       {/* Content Container */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Text Section */}
-        <div className="lg:w-1/2 text-end px-4">
+        <div className="lg:w-1/2 text-end px-4 py-8">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             احصل على تجربتك المثالية مع تطبيقنا
           </h2>
