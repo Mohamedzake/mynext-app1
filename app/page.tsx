@@ -9,6 +9,9 @@ import { useTranslations } from "next-intl";
 import Solutions from "@/app/_components/Solutions";
 import FeaturesSection from "@/app/_components/FeaturesSection";
 import FeaturesSection2 from "./_components/FeaturesSection2";
+import AboutSection from "./_components/AboutSection";
+import Contact from "./_components/Contact";
+import PromoSection from "./_components/PromoSection";
 // import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 export default function Home() {
   const t = useTranslations("home");
@@ -55,6 +58,9 @@ export default function Home() {
       <Solutions />
       <FeaturesSection />
       <FeaturesSection2 />
+      <AboutSection />
+      <PromoSection />
+      <Contact />
       <Footer />
     </div>
   );
