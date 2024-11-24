@@ -61,8 +61,8 @@ function Footer() {
           {/* Column 4 */}
 
           <div className="flex flex-col md:items-end text-right">
-            <p className="mb-4">{t("footer_description")}</p>
-            <div className="flex space-x-4 justify-end">
+            <p className="mb-4 text-end">{t("footer_description")}</p>
+            <div className="flex gap-4 justify-end">
               <a href="#" aria-label="Facebook">
                 <FontAwesomeIcon
                   icon={faFacebookSquare}

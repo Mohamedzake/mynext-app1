@@ -386,7 +386,7 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:items-center gap-4">
           {[
-            { href: "/", label: t("home") },
+            { href: "/home", label: t("home") },
             { href: "/about", label: t("about_us") },
             { href: "/services", label: t("solutions") },
             { href: "/pricing", label: t("packages") },
