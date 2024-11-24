@@ -77,6 +77,7 @@ import { useTranslations } from "next-intl";
 import Contact from "@/app/_components/Contact";
 import WhyChooseMyCash from "@/app/_components/WhyChooseMyCash";
 import WhyChooseMyCash2 from "@/app/_components/WhyChooseMyCash2";
+import CompanyLogos from "./_components/CompanyLogos";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -85,10 +86,10 @@ export default function Home() {
     <div>
       <main className="relative pt-8 h-auto">
         <Header />
-        <section className="flex flex-col lg:flex-row items-center justify-between p-8 bg-primary-10 rounded-lg shadow-md mx-auto">
+        <section className="flex flex-col lg:flex-row items-center justify-between p-8 bg-primary-10  mx-auto">
           {/* Form Section */}
-          <div className="bg-gray-50 p-8 rounded-lg shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
-            <h2 className="text-lg font-semibold text-gray-700 mb-4 text-center lg:text-right">
+          <div className="bg-primary-10 border p-8 rounded-2xl shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 text-center lg:text-right">
               احصل اليوم على تطبيق ماي كاش: الحل الذكي لإدارة المبيعات والدفع
               بكل سهولة
             </h2>
@@ -96,35 +97,35 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="الاسم الاول"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full p-4 text-end text-2xl  border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
               />
               <input
                 type="text"
                 placeholder="الاسم الثاني"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full p-4 border text-2xl  text-end border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
               />
               <input
                 type="email"
                 placeholder="البريد الإلكتروني"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full p-4 border text-2xl  text-end border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
               />
               <input
                 type="tel"
                 placeholder="رقم الهاتف"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full p-4 border text-2xl  text-end  border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
               />
               <input
                 type="text"
                 placeholder="اسم الشركة"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full p-4 border text-2xl  text-end border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
               />
-              <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+              <select className="w-full p-4 text-2xl text-black text-end border bg-primary-10 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
                 <option>كم عدد الفروع؟</option>
                 {/* Add more options as needed */}
               </select>
               <button
                 type="submit"
-                className="w-full bg-green-500 text-white py-3 rounded-md font-semibold hover:bg-green-600 transition duration-300"
+                className="w-full bg-primary-20 text-white py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300"
               >
                 إرسال
               </button>
@@ -141,6 +142,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <CompanyLogos />
       <WhyChooseMyCash />
       <WhyChooseMyCash2 />
       <Contact />

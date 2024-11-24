@@ -1,5 +1,5 @@
 import React from "react";
-import img from "@/public/pos_img.jpg";
+import img1 from "@/public/ Image.png";
 import Image from "next/image";
 const WhyChooseMyCash: React.FC = () => {
   return (
@@ -18,12 +18,12 @@ const WhyChooseMyCash: React.FC = () => {
       {/* Card Container */}
       <div className="container mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="relative">
+        <div className="bg-white shadow-md rounded-3xl overflow-hidden">
+          <div className="relative bg-primary-100">
             <Image
-              src={img}
+              src={img1}
               alt="Attendance System"
-              className="w-full h-56 object-cover"
+              className="w-full  object-cover"
             />
           </div>
           <div className="p-6 text-end">
@@ -36,7 +36,7 @@ const WhyChooseMyCash: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">
-            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-lg">
+            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -56,12 +56,12 @@ const WhyChooseMyCash: React.FC = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="relative">
+        <div className="bg-white shadow-md rounded-3xl overflow-hidden">
+          <div className="relative bg-primary-100">
             <Image
-              src={img}
+              src={img1}
               alt="Attendance System"
-              className="w-full h-56 object-cover"
+              className="w-full  object-cover"
             />
           </div>
           <div className="p-6 text-end">
@@ -74,7 +74,7 @@ const WhyChooseMyCash: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">
-            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-lg">
+            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -93,12 +93,12 @@ const WhyChooseMyCash: React.FC = () => {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="relative">
+        <div className="bg-white shadow-md rounded-3xl overflow-hidden">
+          <div className="relative bg-primary-100">
             <Image
-              src={img}
+              src={img1}
               alt="Attendance System"
-              className="w-full h-56 object-cover"
+              className="w-full  object-cover"
             />
           </div>
           <div className="p-6 text-end">
@@ -111,7 +111,7 @@ const WhyChooseMyCash: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">
-            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-lg">
+            <button className="flex items-center justify-center w-20 h-16 bg-gray-200 hover:bg-gray-300 rounded-bl-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

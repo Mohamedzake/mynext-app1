@@ -95,6 +95,7 @@ import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 import AboutSection from "@/app/_components/AboutSection";
 import Contact from "@/app/_components/Contact";
 import PromoSection from "@/app/_components/PromoSection";
+import CompanyLogos from "../_components/CompanyLogos";
 // import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 export default function Home() {
   const t = useTranslations("home");
@@ -137,7 +138,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-
+      <CompanyLogos />
       <Solutions />
       <FeaturesSection />
       <FeaturesSection2 />

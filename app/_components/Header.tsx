@@ -355,14 +355,14 @@ function Header() {
 
   return (
     <header
-      className={`bg-white shadow-lg py-2 z-10 relative ${
+      className={`bg-white shadow-lg py-2 z-10 relative border ${
         isMenuOpen ? "rounded-none" : "md:mx-8 rounded-l-full rounded-r-full"
       }`}
     >
       <div className="container mx-auto px-4 py-1 flex items-center justify-between">
         <div className="flex items-center gap-4">
           {!isMenuOpen && (
-            <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all hidden lg:block">
+            <button className="bg-primary-20 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all hidden lg:block">
               {t("start_now")}
             </button>
           )}
