@@ -1,18 +1,19 @@
 import React from "react";
 import img1 from "@/public/ Image.png";
 import Image from "next/image";
+
+import { useTranslations } from "next-intl";
 const WhyChooseMyCash: React.FC = () => {
+  const t = useTranslations("landing");
+
   return (
     <section className="p-12 bg-primary-100">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold text-gray-800 mb-2">
-          لماذا تختار تطبيق ماي كاش؟
+          {t("whyChooseMyCash")}
         </h2>
-        <p className="text-gray-600 text-2xl">
-          نظام ذكاء اصطناعي AI حصري صنع لإجلك لتحسين الكفاءة وإدارة الأعمال
-          بذكاء
-        </p>
+        <p className="text-gray-600 text-2xl">{t("aiSystemDescription")}</p>
       </div>
 
       {/* Card Container */}
@@ -22,17 +23,16 @@ const WhyChooseMyCash: React.FC = () => {
           <div className="relative bg-primary-100">
             <Image
               src={img1}
-              alt="Attendance System"
-              className="w-full  object-cover"
+              alt={t("attendanceSystem")}
+              className="w-full object-cover"
             />
           </div>
           <div className="p-6 text-end">
             <h3 className="text-4xl font-bold text-gray-800 mb-8">
-              : نظام الحضور والانصراف
+              {t("attendanceSystemTitle")}
             </h3>
             <p className="text-gray-600 font-bold text-2xl">
-              يعتمد على التعرف على الوجه لتسجيل دخول وخروج الموظفين بدقة، مما
-              يعزز الانضباط ويوفر تقارير فورية.
+              {t("attendanceSystemDescription")}
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">
@@ -60,17 +60,16 @@ const WhyChooseMyCash: React.FC = () => {
           <div className="relative bg-primary-100">
             <Image
               src={img1}
-              alt="Attendance System"
-              className="w-full  object-cover"
+              alt={t("attendanceSystem")}
+              className="w-full object-cover"
             />
           </div>
           <div className="p-6 text-end">
             <h3 className="text-4xl font-bold text-gray-800 mb-8">
-              : نظام الحضور والانصراف
+              {t("attendanceSystemTitle")}
             </h3>
             <p className="text-gray-600 font-bold text-2xl">
-              يعتمد على التعرف على الوجه لتسجيل دخول وخروج الموظفين بدقة، مما
-              يعزز الانضباط ويوفر تقارير فورية.
+              {t("attendanceSystemDescription")}
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">
@@ -92,22 +91,22 @@ const WhyChooseMyCash: React.FC = () => {
             </button>
           </div>
         </div>
+
         {/* Card 3 */}
         <div className="bg-white shadow-md rounded-3xl overflow-hidden">
           <div className="relative bg-primary-100">
             <Image
               src={img1}
-              alt="Attendance System"
-              className="w-full  object-cover"
+              alt={t("attendanceSystem")}
+              className="w-full object-cover"
             />
           </div>
           <div className="p-6 text-end">
             <h3 className="text-4xl font-bold text-gray-800 mb-8">
-              : نظام الحضور والانصراف
+              {t("attendanceSystemTitle")}
             </h3>
             <p className="text-gray-600 font-bold text-2xl">
-              يعتمد على التعرف على الوجه لتسجيل دخول وخروج الموظفين بدقة، مما
-              يعزز الانضباط ويوفر تقارير فورية.
+              {t("attendanceSystemDescription")}
             </p>
           </div>
           <div className="flex justify-start mb-4 p-6">

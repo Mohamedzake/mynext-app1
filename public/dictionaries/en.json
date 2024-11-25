@@ -133,5 +133,21 @@
       "inventoryReports": "Issuing inventory reports"
     },
     "getStarted": "Get started"
+  },
+  "landing": {
+    "getApp": "Get the MyCash app today: the smart solution for managing sales and payments easily",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phoneNumber": "Phone Number",
+    "companyName": "Company Name",
+    "numberOfBranches": "?How many branches",
+    "submit": "Submit",
+    "myCashIllustration": "MyCash Illustration",
+    "whyChooseMyCash": "?Why Choose MyCash",
+    "aiSystemDescription": ".An exclusive AI system designed for you to enhance efficiency and manage business intelligently",
+    "attendanceSystem": "Attendance System",
+    "attendanceSystemTitle": ":Attendance and Departure System",
+    "attendanceSystemDescription": "Utilizes facial recognition for accurate employee check-in and check-out, enhancing discipline and providing instant reports."
   }
 }

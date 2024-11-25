@@ -3,18 +3,17 @@ import img from "@/public/product-chain 1-1.png";
 import img1 from "@/public/feather-pen 1.png";
 import img2 from "@/public/feather-pen 1-1.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 const WhyChooseMyCash2: React.FC = () => {
+  const t = useTranslations("landing");
   return (
     <section className="p-12 bg-primary-10">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold text-gray-800 mb-2">
-          لماذا تختار تطبيق ماي كاش؟
+          {t("whyChooseMyCash")}
         </h2>
-        <p className="text-gray-600 text-2xl">
-          نظام ذكاء اصطناعي AI حصري صنع لإجلك لتحسين الكفاءة وإدارة الأعمال
-          بذكاء
-        </p>
+        <p className="text-gray-600 text-2xl">{t("aiSystemDescription")}</p>
       </div>
 
       {/* Grid Container */}
@@ -32,11 +31,10 @@ const WhyChooseMyCash2: React.FC = () => {
           </div>
           <div className="p-4 text-end">
             <h3 className="text-4xl font-bold text-gray-800 mb-8">
-              : نظام الحضور والانصراف
+              {t("attendanceSystemTitle")}
             </h3>
             <p className="text-gray-600 text-2xl">
-              يعتمد على التعرف على الوجه لتسجيل دخول وخروج الموظفين بدقة، مما
-              يعزز الانضباط ويوفر تقارير فورية.
+              {t("attendanceSystemDescription")}
             </p>
           </div>
         </div>

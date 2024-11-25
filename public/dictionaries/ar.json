@@ -132,5 +132,21 @@
       "inventoryReports": "إصدار تقارير المخزون"
     },
     "getStarted": "ابدأ الآن"
+  },
+  "landing": {
+    "getApp": "احصل اليوم على تطبيق ماي كاش: الحل الذكي لإدارة المبيعات والدفع بكل سهولة",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الثاني",
+    "email": "البريد الإلكتروني",
+    "phoneNumber": "رقم الهاتف",
+    "companyName": "اسم الشركة",
+    "numberOfBranches": "كم عدد الفروع؟",
+    "submit": "إرسال",
+    "myCashIllustration": "توضيح ماي كاش",
+    "whyChooseMyCash": "لماذا تختار تطبيق ماي كاش؟",
+    "aiSystemDescription": "نظام ذكاء اصطناعي AI حصري صنع لإجلك لتحسين الكفاءة وإدارة الأعمال بذكاء.",
+    "attendanceSystem": "نظام الحضور والانصراف",
+    "attendanceSystemTitle": ": نظام الحضور والانصراف",
+    "attendanceSystemDescription": "يعتمد على التعرف على الوجه لتسجيل دخول وخروج الموظفين بدقة، مما يعزز الانضباط ويوفر تقارير فورية."
   }
 }
