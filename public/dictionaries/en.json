@@ -27,6 +27,21 @@
     "mycash_pos_system": "MyCash POS System gives you complete control over managing all operations in your store",
     "get_your_trial_version": "Get your trial version"
   },
+  "solutions2": {
+    "headerSubtitle": "Discover a New Vision for Business Management",
+    "headerTitle": "Advanced AI Solutions",
+    "headerDescription": "Make your business smart with leading AI solutions, and get ready to embrace digital business!",
+    "items": {
+      "attendanceTitle": "Attendance and Departure",
+      "attendanceDescription": "Say goodbye to traditional attendance recording! The AI system uses facial recognition to accurately and securely log employee check-ins and check-outs, contributing to better discipline and providing instant reports.",
+      "salesTitle": "Sales Through Cameras",
+      "salesDescription": "An AI system that enables product recognition and automatic sales logging as soon as the camera captures items. This technology saves time, reduces human errors, and enhances the customer experience by speeding up purchases.",
+      "ageGenderTitle": "Age and Gender Analysis",
+      "ageGenderDescription": "AI technologies provide comprehensive reports on customer age groups and gender, allowing you to tailor offers and services based on your audience's needs and improve marketing strategies.",
+      "customerVisitsTitle": "Customer Visit Measurement",
+      "customerVisitsDescription": "Gain unprecedented insights into your store's activity. The system provides accurate statistics on visitor numbers, peak hours, and traffic levels on specific days, helping you plan better and increase profits."
+    }
+  },
   "solutionsBlogs": {
     "view_more_articles": "View more related articles",
     "dummy_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -149,5 +164,47 @@
     "attendanceSystem": "Attendance System",
     "attendanceSystemTitle": ":Attendance and Departure System",
     "attendanceSystemDescription": "Utilizes facial recognition for accurate employee check-in and check-out, enhancing discipline and providing instant reports."
+  },
+
+  "carousel": {
+    "exclusiveFeatures": "Exclusive Features",
+    "mainTitle": "Boost Your Business with MyCash's Features",
+    "subtitle": "MyCash enhances your business performance with the advanced features provided by the app",
+    "item1": {
+      "title": "Smart Management of the Future:",
+      "description": [
+        "An AI-powered system that provides real-time insights into sales, customers, and market behaviors.",
+        "Complete integration across web, Android, and smart devices to offer an advanced sales and payment experience."
+      ],
+      "buttonText": "Get Your Free Trial"
+    },
+    "item2": {
+      "title": "Section 2 Title",
+      "description": [
+        "An AI-powered system that provides real-time insights into sales, customers, and market behaviors.",
+        "Complete integration across web, Android, and smart devices to offer an advanced sales and payment experience."
+      ],
+      "buttonText": "Get Your Free Trial"
+    },
+    "item3": {
+      "title": "Section 3 Title",
+      "description": [
+        "An AI-powered system that provides real-time insights into sales, customers, and market behaviors.",
+        "Complete integration across web, Android, and smart devices to offer an advanced sales and payment experience."
+      ],
+      "buttonText": "Get Your Free Trial"
+    }
+  },
+  "featuresSection2": {
+    "exclusiveFeatures": "Exclusive Features",
+    "enhanceYourBusiness": "Enhance your business with My Cash benefits",
+    "feature1Title": "Access the system from any device",
+    "feature1Description": "You can easily access the system from any device, whether you're using a mobile phone, tablet, or desktop. You can manage your sales and inventory anytime, anywhere.",
+    "ctaButtonText": "Get your trial version"
+  },
+  "PromoSection": {
+    "promoHeading": "Get your perfect experience with our app",
+    "promoDescription": "Discover a seamless, customized experience with all the tools you need at your fingertips. Whether at home or on the go, our app keeps you connected and in control anytime, anywhere.",
+    "ctaText": "Download on Google Play"
   }
 }

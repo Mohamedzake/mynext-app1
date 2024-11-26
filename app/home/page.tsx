@@ -144,7 +144,7 @@ export default function Home() {
       <Solutions />
       <Solutions2 />
       <Carousel />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
       <FeaturesSection2 />
       <AboutSection />
       <PromoSection />
