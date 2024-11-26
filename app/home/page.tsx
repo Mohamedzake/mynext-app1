@@ -90,12 +90,14 @@ import bg from "@/public/bg.png";
 import Footer from "@/app/_components/Footer";
 import { useTranslations } from "next-intl";
 import Solutions from "@/app/_components/Solutions";
+import Solutions2 from "@/app/_components/Solutions2";
 import FeaturesSection from "@/app/_components/FeaturesSection";
 import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 import AboutSection from "@/app/_components/AboutSection";
 import Contact from "@/app/_components/Contact";
 import PromoSection from "@/app/_components/PromoSection";
 import CompanyLogos from "../_components/CompanyLogos";
+import Carousel from "../_components/Carousel";
 // import FeaturesSection2 from "@/app/_components/FeaturesSection2";
 export default function Home() {
   const t = useTranslations("home");
@@ -140,6 +142,8 @@ export default function Home() {
       </main>
       <CompanyLogos />
       <Solutions />
+      <Solutions2 />
+      <Carousel />
       <FeaturesSection />
       <FeaturesSection2 />
       <AboutSection />
