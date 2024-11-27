@@ -5,6 +5,8 @@ import Link from "next/link";
 import posImage from "@/public/about-1.jpg";
 import deliveryImage from "@/public/about-2.jpg";
 import { useTranslations } from "next-intl";
+import { HiOutlineLightBulb } from "react-icons/hi";
+
 export default function Missions() {
   const t = useTranslations("about_my_cash");
   return (
@@ -29,10 +31,15 @@ export default function Missions() {
           </div>
 
           <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-20 mb-4">
-              {t("vision")}
-            </h3>
-            <p className="text-black text-2xl sm:text-base lg:text-2xl font-bold mb-6">
+            <div className="flex gap-4 ">
+              <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-primary-20 mb-4">
+                {t("vision")}
+              </h3>
+              <div className="bg-primary-20 rounded-full h-8 w-8 flex justify-center items-center">
+                <HiOutlineLightBulb size={24} className="text-primary-10" />
+              </div>
+            </div>
+            <p className="text-black text-end text-2xl sm:text-base lg:text-2xl font-bold mb-6">
               {t("leadership_in_technology")}
             </p>
           </div>
@@ -41,10 +48,15 @@ export default function Missions() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 flex flex-col justify-center items-end text-right order-2 lg:order-1">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-20 mb-4">
-              {t("vision")}
-            </h3>
-            <p className="text-black text-2xl sm:text-base lg:text-2xl font-bold mb-6">
+            <div className="flex gap-4 ">
+              <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-primary-20 mb-4">
+                {t("vision")}
+              </h3>
+              <div className="bg-primary-20 rounded-full h-8 w-8 flex justify-center items-center">
+                <HiOutlineLightBulb size={24} className="text-primary-10" />
+              </div>
+            </div>
+            <p className="text-black text-2xl text-end sm:text-base lg:text-2xl font-bold mb-6">
               {t("leadership_in_technology")}
             </p>
           </div>

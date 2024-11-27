@@ -88,7 +88,9 @@ function ContactForm() {
               <h3 className="text-3xl font-semibold text-primary-20">
                 {t("phoneNumber")}
               </h3>
-              <FaPhone className="text-green-500 text-3xl" />
+              <div className="bg-primary-20 rounded-full h-8 w-8 flex justify-center items-center">
+                <FaPhone className="text-primary-10 text-1xl" />
+              </div>
             </div>
             <p className="text-gray-700 text-xl">+966920031014</p>
           </div>
@@ -98,7 +100,9 @@ function ContactForm() {
               <h3 className="text-3xl font-semibold text-primary-20">
                 {t("email")}
               </h3>
-              <FaEnvelope className="text-green-500 text-3xl" />
+              <div className="bg-primary-20 rounded-full h-8 w-8 flex justify-center items-center">
+                <FaEnvelope className="text-primary-10 text-1xl" />
+              </div>
             </div>
             <p className="text-gray-700 text-xl">sales@mycash.sa</p>
           </div>
@@ -108,9 +112,11 @@ function ContactForm() {
               <h3 className="text-3xl font-semibold text-primary-20">
                 {t("address")}
               </h3>
-              <FaMapMarkerAlt className="text-green-500 text-3xl" />
+              <div className="bg-primary-20 rounded-full h-8 w-8 flex justify-center items-center">
+                <FaMapMarkerAlt className="text-primary-10 text-1xl" />
+              </div>
             </div>
-            <p className="text-gray-700 text-xl">
+            <p className="text-gray-700 text-xl text-end">
               {t("addressDetails")
                 .split("\n")
                 .map((line, index) => (
