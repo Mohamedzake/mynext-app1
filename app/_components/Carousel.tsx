@@ -605,6 +605,7 @@
 // export default Carousel;
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Carousel: React.FC = () => {
   const t = useTranslations("carousel");
@@ -694,12 +695,20 @@ const Carousel: React.FC = () => {
               </button>
             </div>
           </div>
-
           {/* Image Section */}
-          <div className="flex-1 mb-6 lg:mb-0">
+          {/* <div className="flex-1 mb-6 lg:mb-0">
             <img
               src={currentItem.imageUrl}
               alt={t(currentItem.titleKey)}
+              className="w-96 lg:w-full h-72 object-cover rounded-lg"
+            />
+          </div> */}
+          <div className="relative flex-1 mb-6 lg:mb-0">
+            <Image
+              src={currentItem.imageUrl}
+              alt={t(currentItem.titleKey)}
+              width={100}
+              height={100}
               className="w-96 lg:w-full h-72 object-cover rounded-lg"
             />
           </div>
