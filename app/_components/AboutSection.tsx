@@ -321,9 +321,20 @@ import Image from "next/image";
 import imgbg from "@/public/small-r.jpeg";
 import small from "@/public/mid-r.jpeg";
 import small1 from "@/public/small1.png";
+import bg from "@/public/bg-half.png";
 const AboutSection: React.FC = () => {
   return (
     <section className="relative bg-primary-30 h-auto">
+      <div className="absolute hidden lg:block bg-primary-30 inset-0">
+        <Image
+          src={bg}
+          layout="fill"
+          placeholder="blur"
+          quality={80}
+          className="object-cover bg-primary-30"
+          alt="Mountains and forests with two cabins"
+        />
+      </div>
       {/* Content Section */}
       <div className="relative mx-auto flex flex-col-reverse lg:flex-row items-center justify-between lg:h-[78vh]">
         {/* Text Section */}
@@ -388,7 +399,7 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
         {/* Background Image */}
-        <div className="w-full bg-primary-30 hidden lg:block lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full relative order-1 lg:order-1">
+        {/* <div className="w-full bg-primary-30 hidden lg:block lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full relative order-1 lg:order-1">
           <Image
             src={small1}
             placeholder="blur"
@@ -398,7 +409,8 @@ const AboutSection: React.FC = () => {
             alt="Background Image"
             className="rounded-lg"
           />
-        </div>
+        </div> */}
+        <div></div>
         <div className="w-full bg-primary-30  block lg:hidden lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full relative order-1 lg:order-1">
           <Image
             src={small1}
