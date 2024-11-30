@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import img from "@/public/Frame 1171278757.png";
 import Image from "next/image";
 import im from "@/public/Frame.png";
-
+import im1 from "@/public/frame.jpeg";
 const PromoSection: React.FC = () => {
   const t = useTranslations("PromoSection");
 

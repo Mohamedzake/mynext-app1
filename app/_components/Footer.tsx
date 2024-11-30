@@ -69,7 +69,7 @@ function Footer() {
             <p className="mb-4 text-1xl flex justify-center md:justify-end">
               {t("footer_description")}
             </p>
-            <div className="flex space-x-4 justify-center md:justify-end">
+            <div className="flex gap-4 justify-center md:justify-end">
               <div className="border-primary-10 border-2 p-1 rounded-lg">
                 <a href="#" aria-label="Facebook">
                   <FontAwesomeIcon

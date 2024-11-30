@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <div>
       <main className="relative pt-8 h-auto">
-        <div className="absolute inset-0 h-[100vh] ">
+        <div className="absolute inset-0 h-[85vh] md:h-[100vh] ">
           <Image
             src={bg}
             layout="fill"
