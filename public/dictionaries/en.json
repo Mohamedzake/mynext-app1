@@ -207,5 +207,15 @@
     "promoHeading": "Get your perfect experience with our app",
     "promoDescription": "Discover a seamless, customized experience with all the tools you need at your fingertips. Whether at home or on the go, our app keeps you connected and in control anytime, anywhere.",
     "ctaText": "Download on Google Play"
+  },
+  "aboutSection": {
+    "title": "My Cash AI",
+    "description": "My Cash was founded to meet the growing demands of the fast-growing business sector in Saudi Arabia. We developed a system to streamline payment management and issue sales invoices seamlessly.",
+    "feature1": "AI comes with many features",
+    "feature2": "Automatic product recognition ",
+    "feature3": "Customer demographic analysis",
+    "learnMore": "Learn More",
+    "getTrial": "Get Your Trial",
+    "bgAlt": "Mountains and forests with two cabins"
   }
 }
