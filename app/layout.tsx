@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <LocaleContext.Provider value={{ currentLocale, setLocale }}>
       <html
         lang={currentLocale}
-        dir={currentLocale === "en" ? "ltr" : "rtl"}
+        dir={currentLocale === "ar" ? "ltr" : "rtl"}
         suppressHydrationWarning
       >
         <body
