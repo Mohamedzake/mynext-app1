@@ -4,11 +4,13 @@ import im from "@/public/auth-logo.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useLocale } from "../layout";
 
 function Header() {
-  // console.log(locale);
+  const { currentLocale, setLocale } = useLocale();
+  console.log(currentLocale);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentLocale, setCurrentLocale] = useState();
+
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const t = useTranslations("home");
 
@@ -18,28 +20,17 @@ function Header() {
 
   /////////////////////////////
   const updateLanguage = (newLanguage: string) => {
-    localStorage.setItem(
-      "userPreferences",
-      JSON.stringify({ language: newLanguage })
-    );
-
-    window.location.reload();
+    setLocale(newLanguage);
   };
 
   ///////////////////////////////
   useEffect(() => {
-    const storedPrefs = localStorage.getItem("userPreferences");
-    if (storedPrefs) {
-      const { language } = JSON.parse(storedPrefs);
-      setCurrentLocale(language);
-    }
-
     const storedActiveLink = localStorage.getItem("activeLink");
     if (storedActiveLink) {
       setActiveLink(storedActiveLink);
     }
   }, []);
-  console.log(currentLocale);
+
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
     localStorage.setItem("activeLink", link);
