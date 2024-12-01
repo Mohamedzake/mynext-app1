@@ -13,5 +13,5 @@ export default function HomePage() {
   //   router.push(`/${newLang}/cabins`);
   // };
 
-  return <div>cabins</div>;
+  return <div className="text-black">cabins</div>;
 }

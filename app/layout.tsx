@@ -78,23 +78,246 @@
 //     </html>
 //   );
 // }
+// "use client";
+
+// import { Inter } from "next/font/google";
+// import "./globals.css";
+// import { i18n } from "@/i18n-config";
+// import { Josefin_Sans } from "next/font/google";
+// import { IntlProvider } from "next-intl";
+// import enMessages from "@/public/dictionaries/en.json";
+// import arMessages from "@/public/dictionaries/ar.json";
+// import React, { useState, useEffect, ReactNode } from "react";
+// import { IBM_Plex_Sans_Arabic } from "next/font/google";
+
+// const josefin = Josefin_Sans({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
+
+// const inter = Inter({ subsets: ["latin"] });
+
+// export default function RootLayout({ children }: { children: ReactNode }) {
+//   const [mounted, setMounted] = useState(false);
+//   const [currentLocale, setCurrentLocale] = useState("ar");
+
+//   useEffect(() => {
+//     const storedPrefs = localStorage.getItem("userPreferences");
+//     if (storedPrefs) {
+//       const { language } = JSON.parse(storedPrefs);
+//       setCurrentLocale(language);
+//     }
+//     setMounted(true);
+//   }, [setCurrentLocale, setMounted]);
+
+//   if (!mounted) {
+//     return (
+//       <html lang="ar" suppressHydrationWarning>
+//         <body
+//           className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//         >
+//           <IntlProvider locale="ar" messages={arMessages}>
+//             {children}
+//           </IntlProvider>
+//         </body>
+//       </html>
+//     );
+//   }
+
+//   const messages = currentLocale === "en" ? enMessages : arMessages;
+
+//   return (
+//     <html
+//       lang={currentLocale}
+//       dir={currentLocale === "en" ? "rtl" : "ltr"}
+//       suppressHydrationWarning
+//     >
+//       <body
+//         className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//       >
+//         <IntlProvider locale={currentLocale} messages={messages}>
+//           {/* <Header /> */}
+//           {children}
+//         </IntlProvider>
+//       </body>
+//     </html>
+//   );
+// }
+// "use client";
+
+// import { Inter } from "next/font/google";
+// import "./globals.css";
+// import { i18n } from "@/i18n-config";
+// import { Josefin_Sans } from "next/font/google";
+// import { IBM_Plex_Sans_Arabic } from "next/font/google"; // Import the font
+// import { IntlProvider } from "next-intl";
+// import enMessages from "@/public/dictionaries/en.json";
+// import arMessages from "@/public/dictionaries/ar.json";
+// import React, { useState, useEffect, ReactNode } from "react";
+
+// const josefin = Josefin_Sans({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
+
+// const inter = Inter({ subsets: ["latin"] });
+
+// // Specify a weight for IBM Plex Sans Arabic
+// const ibmPlexArabic = IBM_Plex_Sans_Arabic({
+//   subsets: ["arabic"], // Specify the Arabic subset
+//   weight: "300", // Specify a single weight here
+//   display: "swap",
+// });
+
+// export default function RootLayout({ children }: { children: ReactNode }) {
+//   const [mounted, setMounted] = useState(false);
+//   const [currentLocale, setCurrentLocale] = useState("ar");
+
+//   useEffect(() => {
+//     const storedPrefs = localStorage.getItem("userPreferences");
+//     if (storedPrefs) {
+//       const { language } = JSON.parse(storedPrefs);
+//       setCurrentLocale(language);
+//     }
+//     setMounted(true);
+//   }, [setCurrentLocale, setMounted]);
+
+//   if (!mounted) {
+//     return (
+//       <html lang="ar" suppressHydrationWarning>
+//         <body
+//           className={`${josefin.className} ${ibmPlexArabic.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//         >
+//           <IntlProvider locale="ar" messages={arMessages}>
+//             {children}
+//           </IntlProvider>
+//         </body>
+//       </html>
+//     );
+//   }
+
+//   const messages = currentLocale === "en" ? enMessages : arMessages;
+
+//   return (
+//     <html
+//       lang={currentLocale}
+//       dir={currentLocale === "en" ? "rtl" : "ltr"}
+//       suppressHydrationWarning
+//     >
+//       <body
+//         className={`${josefin.className} ${ibmPlexArabic.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//       >
+//         <IntlProvider locale={currentLocale} messages={messages}>
+//           {/* <Header /> */}
+//           {children}
+//         </IntlProvider>
+//       </body>
+//     </html>
+//   );
+// }
+// "use client";
+
+// import { Inter } from "next/font/google";
+// import "./globals.css";
+// import { Josefin_Sans } from "next/font/google";
+// import { IBM_Plex_Sans_Arabic } from "next/font/google"; // Import the Arabic font
+// import { IntlProvider } from "next-intl";
+// import enMessages from "@/public/dictionaries/en.json";
+// import arMessages from "@/public/dictionaries/ar.json";
+// import React, { useState, useEffect, ReactNode } from "react";
+
+// const josefin = Josefin_Sans({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
+
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weight: "400",
+//   display: "swap",
+// });
+
+// const ibmPlexArabic = IBM_Plex_Sans_Arabic({
+//   subsets: ["arabic"],
+//   weight: "400",
+//   display: "swap",
+// });
+
+// export default function RootLayout({ children }: { children: ReactNode }) {
+//   const [mounted, setMounted] = useState(false);
+//   const [currentLocale, setCurrentLocale] = useState("ar");
+
+//   useEffect(() => {
+//     const storedPrefs = localStorage.getItem("userPreferences");
+//     if (storedPrefs) {
+//       const { language } = JSON.parse(storedPrefs);
+//       setCurrentLocale(language);
+//     }
+//     setMounted(true);
+//   }, []);
+
+//   const messages = currentLocale === "en" ? enMessages : arMessages;
+
+//   if (!mounted) {
+//     return (
+//       <html lang="ar" suppressHydrationWarning>
+//         <body
+//           className={`${josefin.className} ${ibmPlexArabic.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//         >
+//           <IntlProvider locale="ar" messages={arMessages}>
+//             {children}
+//           </IntlProvider>
+//         </body>
+//       </html>
+//     );
+//   }
+
+//   return (
+//     <html
+//       lang={currentLocale}
+//       dir={currentLocale === "en" ? "ltr" : "rtl"}
+//       suppressHydrationWarning
+//     >
+//       <body
+//         className={`${
+//           currentLocale === "en" ? inter.className : ibmPlexArabic.className
+//         } antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+//       >
+//         <IntlProvider locale={currentLocale} messages={messages}>
+//           {/* Language switcher could be added here */}
+//           {children}
+//         </IntlProvider>
+//       </body>
+//     </html>
+//   );
+// }
 "use client";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { i18n } from "@/i18n-config";
 import { Josefin_Sans } from "next/font/google";
+import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import { IntlProvider } from "next-intl";
 import enMessages from "@/public/dictionaries/en.json";
 import arMessages from "@/public/dictionaries/ar.json";
 import React, { useState, useEffect, ReactNode } from "react";
-// import Header from "@/app/_components/Header";
+
 const josefin = Josefin_Sans({
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const ibmPlexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState(false);
@@ -107,13 +330,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       setCurrentLocale(language);
     }
     setMounted(true);
-  }, [setCurrentLocale, setMounted]);
+  }, []);
+
+  const messages = currentLocale === "en" ? enMessages : arMessages;
 
   if (!mounted) {
     return (
       <html lang="ar" suppressHydrationWarning>
         <body
-          className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+          className={`${josefin.className} ${ibmPlexArabic.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
         >
           <IntlProvider locale="ar" messages={arMessages}>
             {children}
@@ -123,19 +348,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     );
   }
 
-  const messages = currentLocale === "en" ? enMessages : arMessages;
-
   return (
     <html
       lang={currentLocale}
-      dir={currentLocale === "en" ? "rtl" : "ltr"}
+      dir={currentLocale === "en" ? "ltr" : "rtl"}
       suppressHydrationWarning
     >
       <body
-        className={`${josefin.className} antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
+        className={`${
+          currentLocale === "en"
+            ? ibmPlexArabic.className + " text-sm"
+            : ibmPlexArabic.className
+        } antialiased bg-primary-10 text-primary-100 min-h-screen flex flex-col relative`}
       >
         <IntlProvider locale={currentLocale} messages={messages}>
-          {/* <Header /> */}
+          {/* Language switcher could be added here */}
           {children}
         </IntlProvider>
       </body>
