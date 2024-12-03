@@ -128,7 +128,7 @@ function AboutSection() {
              : "rounded-b-full lg:rounded-bl-none lg:rounded-r-full"
          } order-2 lg:order-2`}
         >
-          <div className="flex flex-col justify-end items-end text-end">
+          <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end text-center lg:text-end">
             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4">
               {t("title")}
             </h2>
