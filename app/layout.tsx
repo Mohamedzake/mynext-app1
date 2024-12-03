@@ -43,6 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   console.log(currentLocale);
 
   const messages = currentLocale === "en" ? enMessages : arMessages;
+  console.log(messages);
 
   return (
     <LocaleContext.Provider value={{ currentLocale, setLocale }}>
