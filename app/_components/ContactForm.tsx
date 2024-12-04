@@ -13,6 +13,7 @@ function ContactForm() {
                 {t("name")}
               </label>
               <input
+                dir="rtl"
                 type="text"
                 id="fullName"
                 placeholder={t("name")}
@@ -24,6 +25,7 @@ function ContactForm() {
                 {t("email")}
               </label>
               <input
+                dir="rtl"
                 type="email"
                 id="email"
                 placeholder={t("email")}
@@ -40,6 +42,7 @@ function ContactForm() {
                 {t("companyName")}
               </label>
               <input
+                dir="rtl"
                 type="text"
                 id="companyName"
                 placeholder={t("companyName")}
@@ -51,6 +54,7 @@ function ContactForm() {
                 {t("phone")}
               </label>
               <input
+                dir="rtl"
                 type="tel"
                 id="phone"
                 placeholder={t("phone")}
@@ -63,6 +67,7 @@ function ContactForm() {
               {t("yourMessage")}
             </label>
             <textarea
+              dir="rtl"
               id="message"
               placeholder={t("yourMessage")}
               className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 h-32 resize-none"

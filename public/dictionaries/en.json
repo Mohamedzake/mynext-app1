@@ -150,22 +150,6 @@
     },
     "getStarted": "Get started"
   },
-  "landing": {
-    "getApp": "Get the MyCash app today: the smart solution for managing sales and payments easily",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "phoneNumber": "Phone Number",
-    "companyName": "Company Name",
-    "numberOfBranches": "?How many branches",
-    "submit": "Submit",
-    "myCashIllustration": "MyCash Illustration",
-    "whyChooseMyCash": "?Why Choose MyCash",
-    "aiSystemDescription": ".An exclusive AI system designed for you to enhance efficiency and manage business intelligently",
-    "attendanceSystem": "Attendance System",
-    "attendanceSystemTitle": ":Attendance and Departure System",
-    "attendanceSystemDescription": "Utilizes facial recognition for accurate employee check-in and check-out, enhancing discipline and providing instant reports."
-  },
 
   "carousel": {
     "exclusiveFeatures": "Exclusive Features",
@@ -217,5 +201,68 @@
     "learnMore": "Learn More",
     "getTrial": "Get Your Trial",
     "bgAlt": "Mountains and forests with two cabins"
+  },
+  "landing": {
+    "header_title": "Get MyCash App Today: The Smart Solution for Easy Sales and Payment Management",
+    "watch_video": "Watch Video",
+    "email_placeholder": "Email Address",
+    "last_name_placeholder": "Last Name",
+    "first_name_placeholder": "First Name",
+    "branch_count": "?How many branches",
+    "branch_1": "1",
+    "branch_2": "2",
+    "branch_3": "3",
+    "branch_4": "4",
+    "branch_5+": "5+",
+    "company_placeholder": "Company Name",
+    "phone_placeholder": "Phone Number",
+    "submit_button": "Submit"
+  },
+  "whyChooseMyCash": {
+    "title": "Why Choose MyCash App?",
+    "subtitle": "An exclusive AI system designed for you to improve efficiency and manage business smartly.",
+    "card1_title": "Attendance System",
+    "card1_description": "Relies on facial recognition to accurately log employee check-ins and check-outs, enhancing discipline and providing instant reports.",
+    "button_label": "Back"
+  },
+  "whyChooseMyCash2": {
+    "headerTitle": "Why Choose MyCash App?",
+    "headerSubtitle": "Exclusive AI-powered system designed to improve efficiency and smart business management.",
+    "card1": {
+      "title": "Attendance System",
+      "description": "Relies on facial recognition to accurately record employee check-in and check-out, enhancing discipline and providing instant reports."
+    },
+    "card2": {
+      "title": "Human Resource Management",
+      "description": "Helps organize payroll, evaluate performance, and track working hours with ease."
+    },
+    "card3": {
+      "title": "Project Management",
+      "description": "Enables tracking project progress, managing tasks, and analyzing productivity."
+    },
+    "card4": {
+      "title": "Customer Service",
+      "description": "An integrated system for handling customer inquiries and providing fast, effective support."
+    },
+    "card5": {
+      "title": "Data Reports",
+      "description": "Generates detailed reports to help you make data-driven strategic decisions."
+    },
+    "card6": {
+      "title": "Smart Marketing",
+      "description": "Tools for analyzing customer behavior and designing targeted marketing campaigns."
+    },
+    "card7": {
+      "title": "Cybersecurity",
+      "description": "An integrated security system to ensure data confidentiality and prevent unauthorized access."
+    },
+    "card8": {
+      "title": "Inventory Management",
+      "description": "Tracks inventory levels, alerts on shortages, and manages orders efficiently."
+    },
+    "card9": {
+      "title": "Financial Analysis",
+      "description": "Provides a comprehensive overview of financial status and revenue-expense management."
+    }
   }
 }
