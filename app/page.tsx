@@ -32,7 +32,8 @@ export default function Home() {
             alt="Mountains and forests with two cabins"
           />
         </div>
-
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <Header />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-50 mb-10 tracking-tight font-bold leading-tight">
