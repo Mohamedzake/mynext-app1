@@ -44,7 +44,8 @@ export default function Solutions() {
             </p>
             <div className="flex flex-col gap-4 md:flex-col lg:flex-row justify-center">
               <Link
-                href="/services"
+                href=""
+                //  href="/services"
                 className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
@@ -77,7 +78,8 @@ export default function Solutions() {
             </p>
             <div className="flex flex-col gap-4 md:flex-col lg:flex-row justify-center">
               <Link
-                href="/services2"
+                // href="/services2"
+                href=""
                 className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
@@ -113,7 +115,8 @@ export default function Solutions() {
                 {t("learn_more")}
               </a> */}
               <Link
-                href="/servicesAI"
+                // href="/servicesAI"
+                href=""
                 className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
