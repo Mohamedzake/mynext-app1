@@ -210,7 +210,7 @@ function Header() {
             </button>
           ) : (
             <button
-              onClick={() => updateLanguage("en")}
+              // onClick={() => updateLanguage("en")}
               className="text-gray-600 hover:underline"
             >
               {t("english")}
@@ -230,7 +230,8 @@ function Header() {
           ].map((link) => (
             <Link
               key={link.href}
-              href={link.href}
+              href=""
+              //  href={link.href}
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
