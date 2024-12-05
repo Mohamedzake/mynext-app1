@@ -289,7 +289,8 @@ function Header() {
           ].map((link) => (
             <Link
               key={link.href}
-              href={link.href}
+              href=""
+              // href={link.href}
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
