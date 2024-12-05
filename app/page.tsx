@@ -3,7 +3,8 @@
 import Header from "@/app/_components/Header";
 import Image from "next/image";
 import Link from "next/link";
-import bg from "@/public/bg.png";
+// import bg from "@/public/bg.png";
+import bg from "@/public/hero.jpeg";
 import Footer from "@/app/_components/Footer";
 import { useTranslations } from "next-intl";
 import Solutions from "@/app/_components/Solutions";
