@@ -82,6 +82,7 @@ import React, {
   createContext,
   useContext,
 } from "react";
+import Head from "next/head";
 
 // Define the type of messages
 type Messages = Record<string, string>;
@@ -114,7 +115,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const [currentLocale, setLocale] = useState("ar");
   console.log(currentLocale);
 
-  // Explicitly type the messages
   const messages: Messages =
     currentLocale === "en"
       ? (enMessages as unknown as Messages)
@@ -127,6 +127,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         dir={currentLocale === "ar" ? "ltr" : "rtl"}
         suppressHydrationWarning
       >
+        <Head>
+          {/* Facebook Domain Verification */}
+          <meta
+            name="facebook-domain-verification"
+            content="kkrd506y1ao3crgzgm7wxpi08nhfsv"
+          />
+        </Head>
         <body
           className={`${
             currentLocale === "en"
