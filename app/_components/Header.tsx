@@ -210,7 +210,7 @@ function Header() {
             </button>
           ) : (
             <button
-              onClick={() => updateLanguage("en")}
+              // onClick={() => updateLanguage("en")}
               className="text-gray-600 hover:underline"
             >
               {t("english")}
