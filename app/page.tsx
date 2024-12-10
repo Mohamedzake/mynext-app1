@@ -45,7 +45,7 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <Link
-              href="#"
+              href="/home"
               className="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-gray-100 transition"
             >
               {t("learn_more")}
