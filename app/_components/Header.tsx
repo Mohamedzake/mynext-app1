@@ -222,16 +222,23 @@ function Header() {
         <nav className="hidden md:flex md:items-center gap-4">
           {[
             { href: "/", label: t("home") },
-            { href: "/about", label: t("about_us") },
-            { href: "/services", label: t("solutions") },
+            { href: "/landing", label: "offer" },
+            { href: "#", label: t("about_us") },
+            { href: "#", label: t("solutions") },
             { href: "/pricing", label: t("packages") },
-            { href: "/blogs", label: t("articles") },
-            { href: "/contacts", label: t("contact_us") },
+            { href: "#", label: t("articles") },
+            { href: "#", label: t("contact_us") },
+            // { href: "/", label: t("home") },
+            // { href: "/about", label: t("about_us") },
+            // { href: "/services", label: t("solutions") },
+            // { href: "/pricing", label: t("packages") },
+            // { href: "/blogs", label: t("articles") },
+            // { href: "/contacts", label: t("contact_us") },
           ].map((link) => (
             <Link
               key={link.href}
-              // href={link.href}
-              href=""
+              href={link.href}
+              // href=""
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
@@ -281,16 +288,23 @@ function Header() {
           </button>
           {[
             { href: "/", label: t("home") },
-            { href: "/about", label: t("about_us") },
-            { href: "/services", label: t("solutions") },
+            { href: "/landing", label: "offer" },
+            { href: "#", label: t("about_us") },
+            { href: "#", label: t("solutions") },
             { href: "/pricing", label: t("packages") },
-            { href: "/blogs", label: t("articles") },
-            { href: "/contacts", label: t("contact_us") },
+            { href: "#", label: t("articles") },
+            { href: "#", label: t("contact_us") },
+            // { href: "/", label: t("home") },
+            // { href: "/about", label: t("about_us") },
+            // { href: "/services", label: t("solutions") },
+            // { href: "/pricing", label: t("packages") },
+            // { href: "/blogs", label: t("articles") },
+            // { href: "/contacts", label: t("contact_us") },
           ].map((link) => (
             <Link
               key={link.href}
-              // href={link.href}
-              href=""
+              href={link.href}
+              // href=""
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
