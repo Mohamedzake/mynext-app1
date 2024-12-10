@@ -203,7 +203,7 @@ function Header() {
           )}
           {currentLocale === "en" ? (
             <button
-              onClick={() => updateLanguage("ar")}
+              // onClick={() => updateLanguage("ar")}
               className="text-gray-600 hover:underline"
             >
               {t("arabic")}
@@ -230,8 +230,8 @@ function Header() {
           ].map((link) => (
             <Link
               key={link.href}
-              href={link.href}
-              // href=""
+              // href={link.href}
+              href=""
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
@@ -289,8 +289,8 @@ function Header() {
           ].map((link) => (
             <Link
               key={link.href}
-              href={link.href}
-              // href=""
+              // href={link.href}
+              href=""
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
