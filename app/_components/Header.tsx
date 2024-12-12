@@ -203,14 +203,14 @@ function Header() {
           )}
           {currentLocale === "en" ? (
             <button
-              // onClick={() => updateLanguage("ar")}
+              onClick={() => updateLanguage("ar")}
               className="text-gray-600 hover:underline"
             >
               {t("arabic")}
             </button>
           ) : (
             <button
-              // onClick={() => updateLanguage("en")}
+              onClick={() => updateLanguage("en")}
               className="text-gray-600 hover:underline"
             >
               {t("english")}
@@ -221,19 +221,19 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:items-center gap-4">
           {[
-            { href: "/", label: t("home") },
-            { href: "/landing", label: "offer" },
-            { href: "#", label: t("about_us") },
-            { href: "#", label: t("solutions") },
-            { href: "/pricing", label: t("packages") },
-            { href: "#", label: t("articles") },
-            { href: "#", label: t("contact_us") },
             // { href: "/", label: t("home") },
-            // { href: "/about", label: t("about_us") },
-            // { href: "/services", label: t("solutions") },
+            // { href: "/landing", label: "offer" },
+            // { href: "#", label: t("about_us") },
+            // { href: "#", label: t("solutions") },
             // { href: "/pricing", label: t("packages") },
-            // { href: "/blogs", label: t("articles") },
-            // { href: "/contacts", label: t("contact_us") },
+            // { href: "#", label: t("articles") },
+            // { href: "#", label: t("contact_us") },
+            { href: "/", label: t("home") },
+            { href: "/about", label: t("about_us") },
+            { href: "/services", label: t("solutions") },
+            { href: "/pricing", label: t("packages") },
+            { href: "/blogs", label: t("articles") },
+            { href: "/contacts", label: t("contact_us") },
           ].map((link) => (
             <Link
               key={link.href}
@@ -287,19 +287,19 @@ function Header() {
             {t("start_now")}
           </button>
           {[
-            { href: "/", label: t("home") },
-            { href: "/landing", label: "offer" },
-            { href: "#", label: t("about_us") },
-            { href: "#", label: t("solutions") },
-            { href: "/pricing", label: t("packages") },
-            { href: "#", label: t("articles") },
-            { href: "#", label: t("contact_us") },
             // { href: "/", label: t("home") },
-            // { href: "/about", label: t("about_us") },
-            // { href: "/services", label: t("solutions") },
+            // { href: "/landing", label: "offer" },
+            // { href: "#", label: t("about_us") },
+            // { href: "#", label: t("solutions") },
             // { href: "/pricing", label: t("packages") },
-            // { href: "/blogs", label: t("articles") },
-            // { href: "/contacts", label: t("contact_us") },
+            // { href: "#", label: t("articles") },
+            // { href: "#", label: t("contact_us") },
+            { href: "/", label: t("home") },
+            { href: "/about", label: t("about_us") },
+            { href: "/services", label: t("solutions") },
+            { href: "/pricing", label: t("packages") },
+            { href: "/blogs", label: t("articles") },
+            { href: "/contacts", label: t("contact_us") },
           ].map((link) => (
             <Link
               key={link.href}
