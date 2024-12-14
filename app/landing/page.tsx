@@ -311,7 +311,8 @@ export default function Home() {
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
               />
               <input
-                type="tel"
+                // type="tel"
+                type="text"
                 placeholder={t("formPhonePlaceholder")}
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"

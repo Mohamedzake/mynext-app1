@@ -27,7 +27,7 @@ export default function Page() {
             className="object-cover"
             alt="Mountains and forests with two cabins"
           />
-        </div>{" "}
+        </div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <Header />
