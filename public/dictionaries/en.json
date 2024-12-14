@@ -223,9 +223,19 @@
     "phone_placeholder": "Phone Number",
     "submit_button": "Submit"
   },
+  "landing2": {
+    "formHeader": "Get MyCash App Today: The Smart Solution for Easy Sales and Payments Management",
+    "formNamePlaceholder": "Name",
+    "formPhonePlaceholder": "Phone Number",
+    "formMessagePlaceholder": "Message",
+    "formSubmitButton": "Send",
+    "formSubmitted": "Form Submitted!",
+    "imageAltText": "MyCash Illustration"
+  },
+
   "whyChooseMyCash": {
-    "title": "Why Choose MyCash App?",
-    "subtitle": "An exclusive AI system designed for you to improve efficiency and manage business smartly.",
+    "title": "?Why Choose MyCash App",
+    "subtitle": ".An exclusive AI system designed for you to improve efficiency and manage business smartly",
     "card1_title": "Attendance System",
     "card1_description": "Relies on facial recognition to accurately log employee check-ins and check-outs, enhancing discipline and providing instant reports.",
     "button_label": "Back"

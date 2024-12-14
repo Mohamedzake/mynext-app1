@@ -232,10 +232,10 @@ const WhyChooseMyCash2: React.FC = () => {
   const t = useTranslations("whyChooseMyCash2");
 
   return (
-    <section className="p-12 bg-primary-10">
+    <section className="px-2 py-12 sm:p-12 bg-primary-10">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold text-gray-800 mb-2">
+        <h2 className="text-4xl font-bold text-gray-800 mb-2">
           {t("headerTitle")}
         </h2>
         <p className="text-gray-600 text-2xl">{t("headerSubtitle")}</p>
@@ -302,9 +302,9 @@ const WhyChooseMyCash2: React.FC = () => {
         ].map(({ id, imgSrc, titleKey, descKey }) => (
           <div
             key={id}
-            className="bg-primary-200 shadow-md rounded-lg p-6 text-center"
+            className="bg-primary-200 shadow-md rounded-lg py-3 px-2 text-center"
           >
-            <div className="flex justify-end mb-4 p-4">
+            <div className="flex justify-end p-4">
               <button className="flex items-center justify-center w-20 h-20 bg-primary-10 hover:bg-gray-300 rounded-lg shadow-md">
                 <Image
                   src={imgSrc}
@@ -313,8 +313,8 @@ const WhyChooseMyCash2: React.FC = () => {
                 />
               </button>
             </div>
-            <div className="p-4 text-end">
-              <h3 className="text-4xl font-bold text-gray-800 mb-8">
+            <div className=" text-end">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 {t(titleKey)}
               </h3>
               <p className="text-gray-600 text-2xl">{t(descKey)}</p>

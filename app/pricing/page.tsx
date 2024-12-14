@@ -30,7 +30,7 @@ export default function Page() {
         <Header />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8 mb-24 mt-28">
           {/* <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 sm:px-6 lg:px-8 mt-12"> */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-10 mb-10 tracking-tight font-bold leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-10 mb-10 tracking-tight font-bold leading-tight">
             {t("access_point_services")}
           </h1>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl text-primary-10">

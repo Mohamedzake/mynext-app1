@@ -15,7 +15,7 @@ const PricingSection: React.FC = () => {
               <h3 className="text-4xl font-semibold text-gray-600">
                 {t("professional")}
               </h3>
-              <div className="mt-4 text-3xl text-gray-500">
+              <div className="mt-4 text-2xl sm:text-3xl text-gray-500">
                 <span className="text-6xl text-gray-800">899</span>
                 {t("perYear")}
               </div>
@@ -49,8 +49,8 @@ const PricingSection: React.FC = () => {
               <h3 className="text-4xl font-semibold text-gray-600">
                 {t("basic")}
               </h3>
-              <div className="mt-4 text-3xl text-gray-500">
-                <span className="text-6xl text-gray-800">699</span>{" "}
+              <div className="mt-4 text-2xl sm:text-3xl text-gray-500">
+                <span className="text-6xl text-gray-800">699</span>
                 {t("perYear")}
               </div>
               <div className="mt-2 text-1xl font-bold text-green-500">
@@ -76,12 +76,12 @@ const PricingSection: React.FC = () => {
 
           {/* Integrated Plan */}
           <div className="relative border bg-gray-100 rounded-lg shadow-lg order-3">
-            <div className="flex flex-col py-3 justify-center items-center bg-white">
+            <div className="flex flex-col p-3 justify-center items-center bg-white">
               <h3 className="text-4xl font-semibold text-gray-600">
                 {t("integrated")}
               </h3>
-              <div className="mt-4 text-3xl text-gray-500">
-                <span className="text-6xl text-gray-800">1199</span>{" "}
+              <div className="mt-4 text-2xl sm:text-3xl text-gray-500">
+                <span className="text-4xl sm:text-6xl text-gray-800">1199</span>
                 {t("perYear")}
               </div>
               <div className="mt-2 text-1xl font-bold text-green-500">

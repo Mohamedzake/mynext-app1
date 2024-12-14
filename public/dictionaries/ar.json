@@ -222,6 +222,15 @@
     "phone_placeholder": "رقم الهاتف",
     "submit_button": "إرسال"
   },
+  "landing2": {
+    "formHeader": "احصل اليوم على تطبيق ماي كاش: الحل الذكي لإدارة المبيعات والدفع بكل سهولة",
+    "formNamePlaceholder": "الاسم",
+    "formPhonePlaceholder": "رقم الهاتف",
+    "formMessagePlaceholder": "الرسالة",
+    "formSubmitButton": "إرسال",
+    "formSubmitted": "تم إرسال النموذج!",
+    "imageAltText": "رسم توضيحي لتطبيق ماي كاش"
+  },
   "whyChooseMyCash": {
     "title": "لماذا تختار تطبيق ماي كاش؟",
     "subtitle": "نظام ذكاء اصطناعي AI حصري صنع لإجلك لتحسين الكفاءة وإدارة الأعمال بذكاء",

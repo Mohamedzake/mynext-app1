@@ -189,6 +189,87 @@
 //     </div>
 //   );
 // }
+// "use client";
+
+// import Header from "@/app/_components/Header";
+// import Image from "next/image";
+// import Footer from "@/app/_components/Footer";
+// import Contact from "@/app/_components/Contact";
+// import WhyChooseMyCash from "@/app/_components/WhyChooseMyCash";
+// import WhyChooseMyCash2 from "@/app/_components/WhyChooseMyCash2";
+// import { useTranslations } from "next-intl";
+
+// import img from "@/public/landing-page.jpeg";
+// import CompanyLogos from "../_components/CompanyLogos";
+
+// export default function Home() {
+//   const t = useTranslations("home");
+
+//   return (
+//     <div>
+//       <main className="relative pt-8 h-auto">
+//         <Header />
+
+//         <section className="flex flex-col lg:flex-row items-center justify-between px-2 sm:px-10 py-10 bg-primary-10 rounded-lg mx-auto">
+//           {/* Form Section */}
+//           <div className="bg-gray-50 p-2 sm:p-8 mt-10 rounded-lg shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
+//             <h2 className="text-lg font-semibold text-gray-700 mb-4 text-center lg:text-right">
+//               احصل اليوم على تطبيق ماي كاش: الحل الذكي لإدارة المبيعات والدفع
+//               بكل سهولة
+//             </h2>
+//             <form
+//               className="space-y-4"
+//               onSubmit={(e) => {
+//                 e.preventDefault();
+//                 alert("Form Submitted!");
+//               }}
+//             >
+//               <input
+//                 type="text"
+//                 placeholder="الاسم"
+//                 required
+//                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+//               />
+//               <input
+//                 type="tel"
+//                 placeholder="رقم الهاتف"
+//                 required
+//                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+//               />
+//               <textarea
+//                 placeholder="الرسالة"
+//                 required
+//                 rows={4}
+//                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 resize-none"
+//               ></textarea>
+//               <button
+//                 type="submit"
+//                 className="w-full bg-primary-20 text-white py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300"
+//               >
+//                 إرسال
+//               </button>
+//             </form>
+//           </div>
+
+//           {/* Image Section */}
+//           <div className="relative lg:w-7/12 w-full flex justify-center lg:justify-end p-0 lg:p-10">
+//             <Image
+//               src={img}
+//               alt="MyCash Illustration"
+//               className="rounded-lg object-cover w-full shadow-lg"
+//             />
+//           </div>
+//         </section>
+//       </main>
+//       <CompanyLogos />
+//       <WhyChooseMyCash />
+//       <WhyChooseMyCash2 />
+//       <Contact />
+//       <Footer />
+//     </div>
+//   );
+// }
+
 "use client";
 
 import Header from "@/app/_components/Header";
@@ -203,50 +284,49 @@ import img from "@/public/landing-page.jpeg";
 import CompanyLogos from "../_components/CompanyLogos";
 
 export default function Home() {
-  const t = useTranslations("home");
+  const t = useTranslations("landing2");
 
   return (
     <div>
       <main className="relative pt-8 h-auto">
         <Header />
 
-        <section className="flex flex-col lg:flex-row items-center justify-between p-10 bg-primary-10 rounded-lg mx-auto">
+        <section className="flex flex-col lg:flex-row items-center justify-between px-2 sm:px-10 py-10 bg-primary-10 rounded-lg mx-auto">
           {/* Form Section */}
-          <div className="bg-gray-50 p-8 mt-10 rounded-lg shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
+          <div className="bg-gray-50 p-2 sm:p-8 mt-10 rounded-lg shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
             <h2 className="text-lg font-semibold text-gray-700 mb-4 text-center lg:text-right">
-              احصل اليوم على تطبيق ماي كاش: الحل الذكي لإدارة المبيعات والدفع
-              بكل سهولة
+              {t("formHeader")}
             </h2>
             <form
               className="space-y-4"
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Form Submitted!");
+                alert(t("formSubmitted"));
               }}
             >
               <input
                 type="text"
-                placeholder="الاسم"
+                placeholder={t("formNamePlaceholder")}
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
               />
               <input
                 type="tel"
-                placeholder="رقم الهاتف"
+                placeholder={t("formPhonePlaceholder")}
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
               />
               <textarea
-                placeholder="الرسالة"
+                placeholder={t("formMessagePlaceholder")}
                 required
                 rows={4}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 resize-none"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-green-500 text-white py-3 rounded-md font-semibold hover:bg-green-600 transition duration-300"
+                className="w-full bg-primary-20 text-white py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300"
               >
-                إرسال
+                {t("formSubmitButton")}
               </button>
             </form>
           </div>
@@ -255,7 +335,7 @@ export default function Home() {
           <div className="relative lg:w-7/12 w-full flex justify-center lg:justify-end p-0 lg:p-10">
             <Image
               src={img}
-              alt="MyCash Illustration"
+              alt={t("imageAltText")}
               className="rounded-lg object-cover w-full shadow-lg"
             />
           </div>
