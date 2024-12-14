@@ -646,7 +646,7 @@ const Carousel: React.FC = () => {
   const currentItem = carouselData[currentIndex];
 
   return (
-    <div className="p-8 sm:p-16 lg:p-28 relative">
+    <div className="px-2 py-8 sm:p-16 lg:p-28 relative">
       <div className="text-center mb-12">
         <h2 className="text-blue-600 text-xl sm:text-2xl font-semibold">
           {t("exclusiveFeatures")}

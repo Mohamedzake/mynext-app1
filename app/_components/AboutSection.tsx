@@ -121,7 +121,7 @@ function AboutSection() {
       <div className="relative mx-auto flex flex-col-reverse lg:flex-row items-center justify-between lg:h-[78vh]">
         {/* Text Section */}
         <div
-          className={`w-full lg:w-1/2 text-center lg:text-right z-40 text-black flex flex-col justify-center lg:py-24 py-10 px-6 sm:px-10
+          className={`w-full lg:w-1/2 text-center lg:text-right z-40 text-black flex flex-col justify-center lg:py-24 py-10 px-2 sm:px-10
          bg-white ${
            currentLocale === "ar"
              ? "rounded-b-full lg:rounded-br-none lg:rounded-l-full"
@@ -136,7 +136,7 @@ function AboutSection() {
               {t("description")}
             </p>
           </div>
-          <div className="flex flex-col mr-7 lg:mr-0 gap-4 mb-8">
+          <div className="flex flex-col mx-10 md:mx-16 lg:mx-0 gap-4 mb-8">
             <div className="flex items-center justify-end gap-4 text-end sm:text-end">
               <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed">
                 {t("feature1")}
@@ -157,12 +157,15 @@ function AboutSection() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-end gap-4">
-            <a className="border border-primary-20 text-primary-20 font-bold text-lg px-4 py-2 rounded-full hover:bg-green-50 transition w-56 lg:w-auto text-center">
+          <div className="flex flex-row sm:w-full sm:flex-col lg:flex-row justify-center items-center lg:justify-end gap-2 sm:gap-4 mb-6">
+            <a className="border border-primary-20 text-primary-20 font-bold text-lg px-2 sm:px-4 py-2 rounded-full hover:bg-green-50 transition  w-32 sm:w-60 lg:w-auto text-center">
               {t("learnMore")}
             </a>
-            <a className="bg-primary-20 text-lg text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-56 lg:w-auto text-center">
+            <a className="bg-primary-20 hidden md:block text-lg text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-32 sm:w-60 lg:w-auto text-center">
               {t("getTrial")}
+            </a>
+            <a className="bg-primary-20 block md:hidden text-lg text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-32 sm:w-56 lg:w-auto text-center">
+              {t("get_your_trial1")}
             </a>
           </div>
         </div>

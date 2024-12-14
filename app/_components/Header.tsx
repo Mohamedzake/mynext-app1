@@ -204,14 +204,14 @@ function Header() {
           {currentLocale === "en" ? (
             <button
               onClick={() => updateLanguage("ar")}
-              className="text-gray-600 hover:underline"
+              className="text-black hover:underline"
             >
               {t("arabic")}
             </button>
           ) : (
             <button
               onClick={() => updateLanguage("en")}
-              className="text-gray-600 hover:underline"
+              className="text-black hover:underline"
             >
               {t("english")}
             </button>
@@ -219,7 +219,7 @@ function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex md:items-center gap-4">
+        <nav className="hidden md:flex md:items-center gap-4 lg:gap-10">
           {[
             // { href: "/", label: t("home") },
             // { href: "/landing", label: "offer" },
@@ -228,12 +228,13 @@ function Header() {
             // { href: "/pricing", label: t("packages") },
             // { href: "#", label: t("articles") },
             // { href: "#", label: t("contact_us") },
-            { href: "/", label: t("home") },
-            { href: "/about", label: t("about_us") },
-            { href: "/services", label: t("solutions") },
-            { href: "/pricing", label: t("packages") },
-            { href: "/blogs", label: t("articles") },
             { href: "/contacts", label: t("contact_us") },
+
+            { href: "/blogs", label: t("articles") },
+            { href: "/pricing", label: t("packages") },
+            { href: "/services", label: t("solutions") },
+            { href: "/about", label: t("about_us") },
+            { href: "/", label: t("home") },
           ].map((link) => (
             <Link
               key={link.href}
@@ -242,7 +243,7 @@ function Header() {
               className={`${
                 activeLink === link.href
                   ? "text-green-600"
-                  : "text-gray-600 hover:text-green-600"
+                  : "text-black hover:text-green-600"
               }`}
             >
               {link.label}

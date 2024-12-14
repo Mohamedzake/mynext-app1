@@ -17,10 +17,10 @@ export default function Contact() {
           <p className="text-lg sm:text-xl mb-8 max-w-2xl text-black">
             {`"${t("dont_hesitate")}"`}
           </p>
-          <div className="flex">
+          <div className="flex w-full sm:w-52">
             <Link
               href="#"
-              className="bg-primary-20 text-2xl  text-primary-10 px-10 py-3 rounded-full hover:bg-green-700 transition"
+              className="bg-primary-20 text-2xl  text-primary-10 px-10 py-3 rounded-full hover:bg-green-700 transition w-full"
             >
               {t("contact_us")}
             </Link>

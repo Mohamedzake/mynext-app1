@@ -36,23 +36,23 @@ export default function Home() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <Header />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-50 mb-10 tracking-tight font-bold leading-tight">
-            {t("main_title")} <br /> {t("main_subtitle")}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-1 sm:px-6 lg:px-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-primary-50 mb-10 tracking-tight sm:p-8 font-bold leading-tight">
+            {t("main_title")}
           </h1>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl text-white">
             {t("description")}
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-2 sm:gap-4">
             <Link
               href="/landing"
-              className="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-gray-100 transition"
+              className="bg-white text-primary-20 px-6 lg:px-10 py-3 rounded-full border-2 border-primary-20 hover:bg-gray-100 transition"
             >
               {t("learn_more")}
             </Link>
             <Link
               href="#"
-              className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
+              className="bg-primary-20 text-white px-2 sm:px-6 md:px-14 py-3 rounded-full hover:bg-green-700 transition"
             >
               {t("get_trial")}
             </Link>

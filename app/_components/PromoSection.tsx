@@ -35,10 +35,10 @@ const PromoSection: React.FC = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-20 lg:gap-8 justify-between">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center z-40 lg:text-end px-4 py-8 order-2 mb-20 lg:order-1">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-primary-30 mb-4">
             {t("promoHeading")}
           </h2>
-          <p className="text-1xl text-gray-800">{t("promoDescription")}</p>
+          <p className="text-1xl text-primary-30">{t("promoDescription")}</p>
 
           {/* Call-to-action Button */}
           <button>

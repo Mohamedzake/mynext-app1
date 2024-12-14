@@ -128,13 +128,13 @@ const Solutions: React.FC = () => {
   const t = useTranslations("solutions2");
 
   return (
-    <div className="bg-primary-100 p-8 sm:p-16 lg:p-28">
+    <div className="bg-primary-100 px-2 py-8 sm:p-16 lg:p-28">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="text-blue-600 text-xl sm:text-2xl font-semibold">
           {t("headerSubtitle")}
         </h2>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2">
+        <h1 className="text-2xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2">
           {t("headerTitle")}
         </h1>
         <p className="text-gray-500 mt-4 text-sm sm:text-base">

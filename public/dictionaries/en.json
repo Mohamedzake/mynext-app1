@@ -9,28 +9,31 @@
     "solutions": "Solutions",
     "about_us": "About Us",
     "home": "home",
-    "main_title": "A Complete Solution to Manage Your Sales",
+    "main_title": "An all-in-one Solution for managing your sales Efficiently, seamlessly, Systematically.",
     "main_subtitle": "Efficiently, Smoothly, Methodically.",
-    "description": "The My Cash system is designed to improve payment and sales management and streamline operations according to professional standards and deep expertise.",
-    "learn_more": "Learn More",
-    "get_trial": "Get Your Trial"
+    "description": "My Cash system was designed to optimize sales and payments management, streamlining these processes with professional standards and expertise.",
+    "learn_more": "Learn more",
+    "get_trial": "Start your free trial"
   },
   "solutions": {
-    "discover_our_solutions": "Discover Our Solutions",
-    "control_store_payments": "Easily manage your store payments with MyCash Solutions",
+    "discover_our_solutions": "Discover our solutions",
+    "control_store_payments": "Control your store payments easily with My Cash Solutions.",
     "dummy_text": "(Lorem Ipsum) is simply dummy text used in the printing and typesetting industry.",
     "pos_solutions": "Point of Sale Solutions",
+    "pos_solutions1": "Payments Solutions",
+    "pos_solutions2": "POS Solutions",
     "sales_solutions": "Sales Solutions",
-    "get_your_trial": "Get Your Trial",
+    "get_your_trial": "Start your free trial",
+    "get_your_trial1": "Start trial",
     "learn_more": "Learn More",
     "access_point_services": "Access Point Services",
     "mycash_pos_system": "MyCash POS System gives you complete control over managing all operations in your store",
     "get_your_trial_version": "Get your trial version"
   },
   "solutions2": {
-    "headerSubtitle": "Discover a New Vision for Business Management",
+    "headerSubtitle": "A new vision for business management",
     "headerTitle": "Advanced AI Solutions",
-    "headerDescription": "Make your business smart with leading AI solutions, and get ready to embrace digital business!",
+    "headerDescription": "Advanced AI Solutions",
     "items": {
       "attendanceTitle": "Attendance and Departure",
       "attendanceDescription": "Say goodbye to traditional attendance recording! The AI system uses facial recognition to accurately and securely log employee check-ins and check-outs, contributing to better discipline and providing instant reports.",
@@ -79,7 +82,7 @@
     "footer_description": "My Cash system is designed to improve payment and sales management and streamline operations according to professional standards and deep expertise."
   },
   "contact": {
-    "contact_us_now": "Contact Us Now and Start Growing Your Business",
+    "contact_us_now": "Reach out to Us now and kickstart the growth of our business",
     "dont_hesitate": "Don't hesitate to reach out! We are here to serve you and make your experience better",
     "contact_us": "Contact Us",
     "title": "Contact Us",
@@ -153,7 +156,7 @@
 
   "carousel": {
     "exclusiveFeatures": "Exclusive Features",
-    "mainTitle": "Boost Your Business with MyCash's Features",
+    "mainTitle": "Exclusive features of MyCash system ",
     "subtitle": "MyCash enhances your business performance with the advanced features provided by the app",
     "item1": {
       "title": "Smart Management of the Future:",
@@ -182,10 +185,10 @@
   },
   "featuresSection2": {
     "exclusiveFeatures": "Exclusive Features",
-    "enhanceYourBusiness": "Enhance your business with My Cash benefits",
-    "feature1Title": "Access the system from any device",
+    "enhanceYourBusiness": "Elevate  your business with My Cash Features",
+    "feature1Title": "On-The-Go Access",
     "feature1Description": "You can easily access the system from any device, whether you're using a mobile phone, tablet, or desktop. You can manage your sales and inventory anytime, anywhere.",
-    "ctaButtonText": "Get your trial version"
+    "ctaButtonText": "Start your free trial"
   },
   "PromoSection": {
     "promoHeading": "Get your perfect experience with our app",
@@ -199,7 +202,9 @@
     "feature2": "Automatic product recognition ",
     "feature3": "Customer demographic analysis",
     "learnMore": "Learn More",
-    "getTrial": "Get Your Trial",
+    "getTrial": "Start your free trial",
+    "get_your_trial": "Start your free trial",
+    "get_your_trial1": "Start trial",
     "bgAlt": "Mountains and forests with two cabins"
   },
   "landing": {

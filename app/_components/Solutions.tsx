@@ -9,13 +9,13 @@ export default function Solutions() {
   const t = useTranslations("solutions");
 
   return (
-    <section className="bg-white py-12 px-6 md:py-16 md:px-16">
-      <div className="container mx-auto px-4">
+    <section className="bg-white py-12 px-0 sm:px-6 md:py-16 md:px-16">
+      <div className="container mx-auto px-2 sm:px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-lg md:text-xl text-blue-600 font-semibold mb-2">
             {t("discover_our_solutions")}
           </h2>
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h1 className="text-3xl md:text-4xl lg:px-48 font-bold text-gray-800">
             {t("control_store_payments")}
           </h1>
           <p className="text-gray-500 max-w-lg md:max-w-2xl mx-auto mt-4">
@@ -36,29 +36,28 @@ export default function Solutions() {
                 height={400}
               />
             </div>
-            <h3 className="text-2xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              {t("pos_solutions")}
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
+              {t("pos_solutions2")}
             </h3>
-            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl">
+            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}
             </p>
-            <div className="flex flex-col gap-4 md:flex-col lg:flex-row justify-center">
+            <div className="flex w-full flex-row gap-2 md:flex-col lg:flex-row justify-center">
               <Link
-                href=""
-                //  href="/services"
-                className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
+                // href=""
+                href="/services"
+                className=" border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-xs px-4  lg:px-8 py-3 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
               </Link>
-              {/* <a className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto">
-                {t("learn_more")}
-              </a> */}
-              <a className="bg-primary-20 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+              <a className="bg-primary-20 text-xs hidden md:block   text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
                 {t("get_your_trial")}
+              </a>
+              <a className="bg-primary-20 text-xs block md:hidden text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+                {t("get_your_trial1")}
               </a>
             </div>
           </div>
-
           {/* Second Item */}
           <div className="bg-stone-50 shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
             <div className="relative mb-8 md:mb-16 w-full max-w-md mx-auto">
@@ -70,30 +69,29 @@ export default function Solutions() {
                 height={400}
               />
             </div>
-            <h3 className="text-2xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              {t("pos_solutions")}
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
+              {t("pos_solutions1")}
             </h3>
-            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl">
+            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}
             </p>
-            <div className="flex flex-col gap-4 md:flex-col lg:flex-row justify-center">
+            <div className="flex w-full flex-row gap-2 md:flex-col lg:flex-row justify-center">
               <Link
-                // href="/services2"
-                href=""
-                className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
+                // href=""
+                href="/services"
+                className=" border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-xs px-4  lg:px-8 py-3 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
               </Link>
-              {/* <a className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto">
-                {t("learn_more")}
-              </a> */}
-              <a className="bg-primary-20 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+              <a className="bg-primary-20 text-xs hidden md:block   text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
                 {t("get_your_trial")}
+              </a>
+              <a className="bg-primary-20 text-xs block md:hidden text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+                {t("get_your_trial1")}
               </a>
             </div>
           </div>
-
-          {/* Third Item */}
+          {/* Third Item */}{" "}
           <div className="bg-stone-50 shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
             <div className="relative mb-8 md:mb-16 w-full max-w-md mx-auto">
               <Image
@@ -104,25 +102,25 @@ export default function Solutions() {
                 height={400}
               />
             </div>
-            <h3 className="text-2xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
               {t("pos_solutions")}
             </h3>
-            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl">
+            <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}
             </p>
-            <div className="flex flex-col gap-4 md:flex-col lg:flex-row justify-center">
-              {/* <a className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto">
-                {t("learn_more")}
-              </a> */}
+            <div className="flex w-full flex-row gap-2 md:flex-col lg:flex-row justify-center">
               <Link
-                // href="/servicesAI"
-                href=""
-                className="border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-lg md:text-xl px-4 py-2 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
+                // href=""
+                href="/services"
+                className=" border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-xs px-4  lg:px-8 py-3 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
               </Link>
-              <a className="bg-primary-20 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+              <a className="bg-primary-20 text-xs hidden md:block   text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
                 {t("get_your_trial")}
+              </a>
+              <a className="bg-primary-20 text-xs block md:hidden text-white px-4 lg:px-5 py-3 rounded-full hover:bg-green-700 transition w-full md:w-full lg:w-auto">
+                {t("get_your_trial1")}
               </a>
             </div>
           </div>

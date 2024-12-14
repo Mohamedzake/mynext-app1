@@ -419,13 +419,13 @@ import Image from "next/image";
 
 const SwipeableSlider: React.FC = () => {
   const logos = [
+    { src: "/zakat_authority.png", alt: "STC Pay" },
     { src: "/stc_payy.png", alt: "STC Pay" },
     { src: "/alrajhi_bank.png", alt: "Al Rajhi Bank" },
     { src: "/geidea.png", alt: "Geidea" },
 
     { src: "/urpay.png", alt: "UrPay" },
     { src: "/mada.png", alt: "Mada" },
-    { src: "/alrajhi_bank.png", alt: "Al Rajhi Bank" },
   ];
 
   const [offset, setOffset] = useState(0);
@@ -453,24 +453,22 @@ const SwipeableSlider: React.FC = () => {
     };
   }, [setVisibleCount]);
 
-  // Slower interval for logo movement
   useEffect(() => {
     const interval = setInterval(() => {
-      setOffset((prevOffset) => prevOffset + 2); // Smaller increment for slower movement
-    }, 50); // Slower interval (50ms)
+      setOffset((prevOffset) => prevOffset + 0.4);
+    }, 50);
 
     return () => clearInterval(interval);
   }, []);
 
-  // Handle seamless looping with reset at the end of the loop
   useEffect(() => {
     const totalWidth = logoWidth * logos.length;
 
     if (offset >= totalWidth) {
       setTimeout(() => {
         setTransition("none");
-        setOffset(0); // Reset offset to loop
-      }, 300); // Wait for transition to complete
+        setOffset(0);
+      }, 300);
 
       setTimeout(() => {
         setTransition("transform 0.3s linear");
