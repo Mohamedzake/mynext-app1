@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import Contact from "../_components/Contact";
 
 import Missions from "../_components/Missions";
+import CompanyLogos from "../_components/CompanyLogos";
 export default function Page() {
   const t = useTranslations("about_my_cash");
   return (
@@ -27,7 +28,7 @@ export default function Page() {
         <Header />
         <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 sm:px-6 lg:px-8 mt-16">
           {/* <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8"> */}
-          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-10 mb-1 tracking-tight font-bold leading-tight">
+          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-10 mb-4 tracking-tight font-bold leading-tight">
             {t("title")}
           </h1>
           <p className="text-base sm:text-lg mb-8 max-w-2xl text-primary-10">
@@ -35,6 +36,7 @@ export default function Page() {
           </p>
         </div>
       </main>
+      <CompanyLogos />
       <Missions />
       <Contact />
       <Footer />
