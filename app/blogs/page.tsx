@@ -31,14 +31,16 @@ export default function Page() {
       {/* //////////////// */}
 
       <div className="min-h-screen bg-primary-10 text-black">
-        <header className="flex justify-between items-center py-4 border-b border-gray-200 max-w-4xl mx-auto my-8 px-10">
+        <header className="flex justify-between items-center py-4 border-b border-gray-200 max-w-4xl mx-auto my-8 px-2 sm:px-10">
           <div className="flex items-center space-x-4 gap-2">
             <Image
               src={avatar}
               alt="Profile"
               className="w-12 h-12 rounded-full"
             />
-            <h1 className="text-xl font-semibold">{t("profile_name")}</h1>
+            <h1 className="text-base sm:text-xl font-semibold">
+              {t("profile_name")}
+            </h1>
           </div>
           <div>
             <span className="text-gray-500">{t("profile_date")}</span>
@@ -46,7 +48,7 @@ export default function Page() {
         </header>
 
         <main>
-          <div className="max-w-4xl mx-auto my-8 px-10">
+          <div className="max-w-4xl mx-auto my-8 px-2 sm:px-10">
             <p className="text-lg mb-4">{t("intro_paragraph_1")}</p>
             <p className="text-lg mb-4">{t("intro_paragraph_2")}</p>
             <blockquote className="italic border-l-4 border-gray-300 pl-4 my-6">
@@ -59,18 +61,20 @@ export default function Page() {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-between items-center max-w-4xl mx-auto my-8 px-10">
+          <div className="flex justify-between items-center max-w-4xl mx-auto my-8 px-2 sm:px-10 border-t border-gray-200 py-6">
             <div>
-              <button className="flex items-center space-x-2 px-4 py-2 border rounded-md hover:bg-gray-100">
+              <button className="flex items-center space-x-2 px-4 py-2 border border-black rounded-full sm:rounded-md hover:bg-gray-100">
                 <span>{t("previous_button")}</span>
               </button>
-              <p className="text-gray-500 mt-2">{t("previous_text")}</p>
+              <p className="text-gray-500 mt-2 hidden sm:block">
+                {t("previous_text")}
+              </p>
             </div>
             <div className="flex flex-col items-end gap-2">
-              <button className="flex items-center space-x-2 px-4 py-2 border rounded-md hover:bg-gray-100">
+              <button className="flex items-center space-x-2 px-4 py-2 border border-black rounded-full sm:rounded-md hover:bg-gray-100">
                 <span>{t("next_button")}</span>
               </button>
-              <p className="text-gray-500">{t("next_text")}</p>
+              <p className="text-gray-500 hidden sm:block">{t("next_text")}</p>
             </div>
           </div>
         </main>

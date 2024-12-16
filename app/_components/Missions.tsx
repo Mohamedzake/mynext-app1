@@ -10,7 +10,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 export default function Missions() {
   const t = useTranslations("about_my_cash");
   return (
-    <section className="bg-white py-16 pt-0 px-2 sm:px-10 lg:px-20 ">
+    <section className="bg-white py-16 pt-0 px-2 sm:px-10 lg:px-20 mt-16 ">
       <div className="mx-auto">
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-8 sm:mb-10 lg:mb-16">

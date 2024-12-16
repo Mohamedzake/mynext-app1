@@ -11,7 +11,10 @@ const FeaturesSection2: React.FC = () => {
         {/* Heading Section */}
         <div className="text-center mb-12">
           <h2 className="text-blue-600 text-2xl font-semibold">
-            {t("exclusiveFeatures")}
+            <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">
+              {" "}
+              {t("exclusiveFeatures")}
+            </span>
           </h2>
           <h1 className="text-2xl md:text-4xl lg:text-5xl lg:px-32 font-bold text-gray-900 mt-2">
             {t("enhanceYourBusiness")}

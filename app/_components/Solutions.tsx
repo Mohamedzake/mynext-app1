@@ -12,9 +12,12 @@ export default function Solutions() {
     <section className="bg-white py-12 px-0 sm:px-6 md:py-16 md:px-16">
       <div className="container mx-auto px-2 sm:px-4">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-lg md:text-xl text-blue-600 font-semibold mb-2">
-            {t("discover_our_solutions")}
+          <h2 className="text-lg md:text-2xl text-blue-600 font-bold mb-2">
+            <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">
+              {t("discover_our_solutions")}
+            </span>
           </h2>
+
           <h1 className="text-3xl md:text-4xl lg:px-48 font-bold text-gray-800">
             {t("control_store_payments")}
           </h1>

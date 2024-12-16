@@ -38,7 +38,7 @@ export default function Page() {
           </p>
         </div>
       </main>
-      <CompanyLogos />
+      {/* <CompanyLogos /> */}
       <Missions />
       <Contact />
       <Footer />

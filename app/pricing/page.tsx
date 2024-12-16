@@ -29,7 +29,7 @@ export default function Page() {
           />
         </div>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
         <Header />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8 mb-24 mt-28">
           {/* <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 sm:px-6 lg:px-8 mt-12"> */}
@@ -48,9 +48,8 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <PricingSection />
       </main>
-
+      <PricingSection />
       <Contact />
       <Footer />
     </div>

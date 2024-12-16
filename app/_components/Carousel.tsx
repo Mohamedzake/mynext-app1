@@ -649,7 +649,9 @@ const Carousel: React.FC = () => {
     <div className="px-2 py-8 sm:p-16 lg:p-28 relative">
       <div className="text-center mb-12">
         <h2 className="text-blue-600 text-xl sm:text-2xl font-semibold">
-          {t("exclusiveFeatures")}
+          <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">
+            {t("exclusiveFeatures")}
+          </span>
         </h2>
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2">
           {t("mainTitle")}

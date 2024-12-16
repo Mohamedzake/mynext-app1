@@ -110,13 +110,13 @@ export default function SolutionsBlogs() {
   const t = useTranslations("solutionsBlogs");
 
   return (
-    <section className="bg-gray-50 py-16 mb-20 px-8">
-      <div className="container mx-auto px-6 md:px-8">
+    <section className="bg-gray-50 py-16 px-2 sm:px-8">
+      <div className="mx-auto px-0 sm:px-6">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-800">
+          <h1 className="text-2xl sm:text-5xl font-bold text-gray-800">
             {t("view_more_articles")}
           </h1>
-          <p className="text-black text-2xl max-w-5xl mx-auto mt-4">
+          <p className="text-black text-xl sm:text-2xl max-w-5xl mx-auto mt-4">
             {t("dummy_text")}
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function SolutionsBlogs() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
 
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden px-2 py-5 sm:p-5">
             <div className="relative w-full h-60">
               <Image
                 src={posImage}
@@ -134,17 +134,17 @@ export default function SolutionsBlogs() {
                 layout="fill"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-green-600 text-sm font-semibold mb-2 text-right">
+            <div className="py-2 px-0 sm:p-6">
+              <h3 className="text-green-600 text-sm font-semibold mb-2 text-end">
                 {t("design")}
               </h3>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-right">
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-end">
                 <a className="text-2xl text-gray-600 hover:text-gray-800 transition ml-2">
                   ↗
                 </a>
                 {t("article_title")}
               </h2>
-              <p className="text-gray-500 mb-8 text-right leading-relaxed">
+              <p className="text-gray-500 mb-8 text-end leading-relaxed">
                 {t("article_body")}
               </p>
 
@@ -169,7 +169,7 @@ export default function SolutionsBlogs() {
           </div>
 
           {/* Card 2 (Same structure as Card 1) */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden px-2 py-5 sm:p-5">
             <div className="relative w-full h-60">
               <Image
                 src={posImage}
@@ -178,17 +178,17 @@ export default function SolutionsBlogs() {
                 layout="fill"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-green-600 text-sm font-semibold mb-2 text-right">
+            <div className="py-2 px-0 sm:p-6">
+              <h3 className="text-green-600 text-sm font-semibold mb-2 text-end">
                 {t("design")}
               </h3>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-right">
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-end">
                 <a className="text-2xl text-gray-600 hover:text-gray-800 transition ml-2">
                   ↗
                 </a>
                 {t("article_title")}
               </h2>
-              <p className="text-gray-500 mb-8 text-right leading-relaxed">
+              <p className="text-gray-500 mb-8 text-end leading-relaxed">
                 {t("article_body")}
               </p>
 
@@ -212,7 +212,7 @@ export default function SolutionsBlogs() {
             </div>
           </div>
           {/* Card 3 (Different Image) */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden px-2 py-5 sm:p-5">
             <div className="relative w-full h-60">
               <Image
                 src={posImage}
@@ -221,17 +221,17 @@ export default function SolutionsBlogs() {
                 layout="fill"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-green-600 text-sm font-semibold mb-2 text-right">
+            <div className="py-2 px-0 sm:p-6">
+              <h3 className="text-green-600 text-sm font-semibold mb-2 text-end">
                 {t("design")}
               </h3>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-right">
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-800 mb-4 flex items-center justify-between text-end">
                 <a className="text-2xl text-gray-600 hover:text-gray-800 transition ml-2">
                   ↗
                 </a>
                 {t("article_title")}
               </h2>
-              <p className="text-gray-500 mb-8 text-right leading-relaxed">
+              <p className="text-gray-500 mb-8 text-end leading-relaxed">
                 {t("article_body")}
               </p>
 
