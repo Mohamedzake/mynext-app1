@@ -45,7 +45,22 @@ export default function Page() {
           </div>
         </div>
       </main>
+      <section>
+        <div className="text-center mb-8 md:mb-12 bg-gray-50 py-14">
+          <h2 className="text-lg md:text-2xl text-blue-600 font-bold mb-2">
+            <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">
+              {t("discover_our_solutions1")}
+            </span>
+          </h2>
 
+          <h1 className="text-3xl md:text-4xl lg:px-48 font-bold text-gray-800">
+            {t("control_store_payments1")}
+          </h1>
+          <p className="text-black text-lg max-w-lg md:max-w-2xl mx-auto mt-4">
+            {t("content")}
+          </p>
+        </div>
+      </section>
       <Items3 />
       <FeaturesSection2AI />
       <Contact />

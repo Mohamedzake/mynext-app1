@@ -81,7 +81,7 @@ export default function Solutions() {
             <div className="flex w-full flex-row gap-2 md:flex-col lg:flex-row justify-center">
               <Link
                 // href=""
-                href="/services"
+                href="/services2"
                 className=" border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-xs px-4  lg:px-8 py-3 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}
@@ -114,7 +114,7 @@ export default function Solutions() {
             <div className="flex w-full flex-row gap-2 md:flex-col lg:flex-row justify-center">
               <Link
                 // href=""
-                href="/services"
+                href="/servicesAI"
                 className=" border flex items-center justify-center border-primary-20 text-primary-20 font-bold text-xs px-4  lg:px-8 py-3 rounded-full hover:bg-green-50 transition w-full md:w-full lg:w-auto"
               >
                 {t("learn_more")}

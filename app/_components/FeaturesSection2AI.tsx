@@ -7,16 +7,12 @@ const FeaturesSection2: React.FC = () => {
   const t = useTranslations("featuresSection2");
   return (
     <section className="bg-white py-16">
-      <div className="container mx-auto px-8">
+      <div className="mx-auto px-2 sm:px-8">
         {/* Heading Section */}
         <div className="text-center mb-12">
-          <h2 className="text-blue-600 text-2xl font-semibold">
-            {t("exclusiveFeatures")}
-          </h2>
-          <h1 className="text-6xl font-bold text-gray-900 mt-2">
-            {t("enhanceYourBusiness")}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:px-32 font-bold text-gray-900 mt-2">
+            {t("enhanceYourBusiness1")}
           </h1>
-          <p className="text-gray-500 mt-4">{t("enhanceYourBusiness")}</p>
         </div>
 
         {/* Feature Section */}
@@ -24,7 +20,7 @@ const FeaturesSection2: React.FC = () => {
           {/* Feature Content */}
           <div className="flex flex-col justify-center items-center lg:items-end p-8">
             <div className="text-primary-20 text-4xl font-bold mb-4">01</div>
-            <h3 className="text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl sm:text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
               {t("feature1Title")}
             </h3>
             <p className="text-gray-600 mb-6 text-center lg:text-end">
@@ -64,7 +60,7 @@ const FeaturesSection2: React.FC = () => {
           {/* Feature Content */}
           <div className="flex flex-col justify-center items-center lg:items-end p-8 order-1 lg:order-2">
             <div className="text-primary-20 text-4xl font-bold mb-4">02</div>
-            <h3 className="text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl sm:text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
               {t("feature1Title")}
             </h3>
             <p className="text-gray-600 mb-6 text-center lg:text-end">
@@ -81,7 +77,7 @@ const FeaturesSection2: React.FC = () => {
           {/* Feature Content */}
           <div className="flex flex-col justify-center items-center lg:items-end p-8">
             <div className="text-primary-20 text-4xl font-bold mb-4">03</div>
-            <h3 className="text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl sm:text-3xl text-center lg:text-end font-semibold text-gray-900 mb-4">
               {t("feature1Title")}
             </h3>
             <p className="text-gray-600 mb-6 text-center lg:text-end">

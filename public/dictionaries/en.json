@@ -17,6 +17,9 @@
   },
   "solutions": {
     "discover_our_solutions": "Discover our solutions",
+    "discover_our_solutions1": " About",
+    "control_store_payments1": "My Cash AI Section.",
+    "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face.",
     "control_store_payments": "Control your store payments easily with My Cash Solutions.",
     "dummy_text": "(Lorem Ipsum) is simply dummy text used in the printing and typesetting industry.",
     "pos_solutions": "Point of Sale Solutions",
@@ -106,6 +109,9 @@
     "leadership_in_technology": "Achieving leadership in empowering businesses through technology and creating a positive and sustainable impact in the local market."
   },
   "items": {
+    "discover_our_solutions": "Discover our solutions",
+    "control_store_payments": "My Cash AI Section.",
+    "dummy_text": "(Lorem Ipsum) is simply dummy text used in the printing and typesetting industry.",
     "vision": "Vision",
     "system_cloud_pos": "Cloud POS System",
     "digital_connection": "Ability to digitally connect and store all transactions",
@@ -120,6 +126,8 @@
     }
   },
   "blogs": {
+    "title": "Our articles",
+    "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face.",
     "profile_name": "Alex Carter",
     "profile_date": "23 January 2025",
     "intro_paragraph_1": "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
@@ -186,6 +194,7 @@
   "featuresSection2": {
     "exclusiveFeatures": "Exclusive Features",
     "enhanceYourBusiness": "Elevate  your business with My Cash Features",
+    "enhanceYourBusiness1": "My Cash AI Features rely on an advanced components",
     "feature1Title": "On-The-Go Access",
     "feature1Description": "You can easily access the system from any device, whether you're using a mobile phone, tablet, or desktop. You can manage your sales and inventory anytime, anywhere.",
     "ctaButtonText": "Start your free trial"
