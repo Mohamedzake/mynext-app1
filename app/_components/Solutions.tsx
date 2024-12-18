@@ -40,7 +40,7 @@ export default function Solutions() {
               />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
-              {t("pos_solutions2")}
+              {t("pos_solutions")}
             </h3>
             <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}
@@ -73,7 +73,7 @@ export default function Solutions() {
               />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
-              {t("pos_solutions1")}
+              {t("payment_solutions")}
             </h3>
             <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}
@@ -106,7 +106,7 @@ export default function Solutions() {
               />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 md:mb-6 ">
-              {t("pos_solutions")}
+              {t("sales_solutions")}
             </h3>
             <p className="text-gray-500 mb-4 md:mb-6 text-lg md:text-xl ">
               {t("dummy_text")}

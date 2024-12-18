@@ -13,7 +13,10 @@
     "main_subtitle": "بكفاءة، سلاسة، منهجية.",
     "description": "نظام ماي كاش صُمم لتحسين إدارة المدفوعات والمبيعات وتسهيل عملياتها وفقاً لمعايير احترافية وخبرة عميقة.",
     "learn_more": "اعرف المزيد",
-    "get_trial": "احصل على نسختك التجريبية"
+    "get_trial": "احصل على نسختك التجريبية",
+    "pos_solutions": "حلول نقاط البيع",
+    "payment_solutions": "حلول الدفع",
+    "sales_solutions": "حلول المبيعات"
   },
   "solutions": {
     "discover_our_solutions": "اكتشف حلولنا",
@@ -22,16 +25,19 @@
     "content": "فى ماي كاش، نحرص على تقديم تجربة مريحة وسلسة لعملائنا. لذلك فإن فريق خدمة العملاء لدينا مستعد دائماً لتقديم الدعم والإجابة على اى استفسارات أو حل أي شكاوى قد تواجهك.",
     "control_store_payments": "تحكم في مدفوعات متجرك بسهولة مع حلول ماي كاش",
     "dummy_text": "(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويستخدم في صناعات الطابع ودور النشر.",
-    "pos_solutions": "حلول نقاط البيع",
+
     "pos_solutions1": "Payments Solutions",
     "pos_solutions2": "POS Solutions",
-    "sales_solutions": "حلول المبيعات",
+
     "get_your_trial": "احصل على نسختك التجريبية",
     "get_your_trial1": "Start trial",
     "learn_more": "اعرف المزيد",
     "access_point_services": "خدمات نقاط الوصول",
     "mycash_pos_system": "نظام ماي كاش لإدارة نقاط البيع يتيح لك السيطرة الكاملة على إدارة كافة العمليات في متجرك",
-    "get_your_trial_version": "احصل على نسختك التجريبية"
+    "get_your_trial_version": "احصل على نسختك التجريبية",
+    "pos_solutions": "حلول نقاط البيع",
+    "payment_solutions": "حلول الدفع",
+    "sales_solutions": "حلول المبيعات"
   },
   "solutions2": {
     "headerSubtitle": "رؤية جديدة لإدارة الأعمال",

@@ -13,7 +13,10 @@
     "main_subtitle": "Efficiently, Smoothly, Methodically.",
     "description": "My Cash system was designed to optimize sales and payments management, streamlining these processes with professional standards and expertise.",
     "learn_more": "Learn more",
-    "get_trial": "Start your free trial"
+    "get_trial": "Start your free trial",
+    "pos_solutions": "POS Solutions",
+    "payment_solutions": "Payments Solutions",
+    "sales_solutions": "Sales Solutions"
   },
   "solutions": {
     "discover_our_solutions": "Discover our solutions",
@@ -22,16 +25,19 @@
     "content": "At MyCash, we are committed to providing a smooth and comfortable experience for our customers. Our customer service team is always ready to assist with any inquiries or resolve any issues you may face.",
     "control_store_payments": "Control your store payments easily with My Cash Solutions.",
     "dummy_text": "(Lorem Ipsum) is simply dummy text used in the printing and typesetting industry.",
-    "pos_solutions": "Point of Sale Solutions",
+
     "pos_solutions1": "Payments Solutions",
     "pos_solutions2": "POS Solutions",
-    "sales_solutions": "Sales Solutions",
+
     "get_your_trial": "Start your free trial",
     "get_your_trial1": "Start trial",
     "learn_more": "Learn More",
     "access_point_services": "Access Point Services",
     "mycash_pos_system": "MyCash POS System gives you complete control over managing all operations in your store",
-    "get_your_trial_version": "Get your trial version"
+    "get_your_trial_version": "Get your trial version",
+    "pos_solutions": "POS Solutions",
+    "payment_solutions": "Payments Solutions",
+    "sales_solutions": "Sales Solutions"
   },
   "solutions2": {
     "headerSubtitle": "A new vision for business management",
