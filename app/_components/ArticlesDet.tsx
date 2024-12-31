@@ -59,13 +59,17 @@
 
 // export default ArticlesDet;
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import avatar from "@/public/avatar.jpg";
 import { useState } from "react";
 
 function ArticlesDet() {
   const [isEditing, setIsEditing] = useState(false);
-  const [profileImage, setProfileImage] = useState(avatar);
+  // const [profileImage, setProfileImage] = useState<string>(avatar);
+  // const [profileImage, setProfileImage] = useState<string | StaticImageData>(
+  //   avatar
+  // );
+  const [profileImage, setProfileImage] = useState<string>(avatar.src);
   const [headerContent, setHeaderContent] = useState({
     profileName: "Alex Carter",
     profileDate: "23 January 2025",
