@@ -333,6 +333,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLocale } from "../layout";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const { currentLocale, setLocale } = useLocale();
@@ -341,7 +342,8 @@ function Header() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const t = useTranslations("home");
-
+  const pathname = usePathname();
+  // console.log(pathname);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -356,14 +358,16 @@ function Header() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setActiveLink(window.location.pathname);
+      setActiveLink(pathname);
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <header
       className={`bg-white shadow-lg py-2 z-50 fixed top-6 left-0 right-0 border ${
-        isMenuOpen ? "rounded-none" : "lg:mx-8 rounded-l-full rounded-r-full"
+        isMenuOpen
+          ? "rounded-none md:rounded-l-full md:rounded-r-full md:mx-8"
+          : "md:mx-8 rounded-l-full rounded-r-full"
       }`}
     >
       <div className="container mx-auto px-4 py-1 flex items-center justify-between">

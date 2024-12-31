@@ -12,6 +12,7 @@ import Contact from "../_components/Contact";
 import Items from "../_components/Items";
 import Pricing from "../_components/Pricing";
 import PricingSection from "../_components/PricingSection";
+import Newpackages from "../_components/Newpackages";
 
 export default function Page() {
   const t = useTranslations("solutions");
@@ -50,6 +51,7 @@ export default function Page() {
         </div>
       </main>
       <PricingSection />
+      <Newpackages />
       <Contact />
       <Footer />
     </div>
