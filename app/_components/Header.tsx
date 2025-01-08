@@ -334,7 +334,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLocale } from "../layout";
 import { usePathname } from "next/navigation";
-
+import Flag from "react-world-flags";
 function Header() {
   const { currentLocale, setLocale } = useLocale();
 
@@ -380,15 +380,17 @@ function Header() {
           {currentLocale === "en" ? (
             <button
               onClick={() => updateLanguage("ar")}
-              className="text-black hover:underline"
+              className="text-black hover:underline flex items-center gap-2"
             >
+              <Flag code="SA" style={{ width: "16px", height: "14px" }} />
               {t("arabic")}
             </button>
           ) : (
             <button
               onClick={() => updateLanguage("en")}
-              className="text-black hover:underline"
+              className="text-black hover:underline flex items-center gap-2"
             >
+              <Flag code="US" style={{ width: "16px", height: "14px" }} />
               {t("english")}
             </button>
           )}
@@ -450,6 +452,16 @@ function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <div className="text-gray-700 text-2xl font-semibold">
+            <Image
+              src={im}
+              width={100}
+              height={100}
+              quality={80}
+              alt="Logo"
+              className="object-contain"
+            />
+          </div>
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -464,17 +476,6 @@ function Header() {
                 ></path>
               </svg>
             </button>
-          </div>
-
-          <div className="text-gray-700 text-2xl font-semibold">
-            <Image
-              src={im}
-              width={100}
-              height={100}
-              quality={80}
-              alt="Logo"
-              className="object-contain"
-            />
           </div>
         </div>
       </div>
