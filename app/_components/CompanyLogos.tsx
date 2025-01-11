@@ -505,3 +505,42 @@ const SwipeableSlider: React.FC = () => {
 };
 
 export default SwipeableSlider;
+
+// import React from "react";
+// import Image from "next/image";
+
+// const SwipeableSlider: React.FC = () => {
+//   const logos = [
+//     { src: "/zakat_authority.png", alt: "Zakat Authority" },
+//     { src: "/stc_payy.png", alt: "STC Pay" },
+//     { src: "/alrajhi_bank.png", alt: "Al Rajhi Bank" },
+//     { src: "/geidea.png", alt: "Geidea" },
+//     { src: "/urpay.png", alt: "UrPay" },
+//     { src: "/mada.png", alt: "Mada" },
+//   ];
+
+//   // Duplicate logos to create a seamless loop
+//   const infiniteLogos = [...logos, ...logos, ...logos]; // Duplicate multiple times for smooth scrolling
+
+//   return (
+//     <div className="relative w-full overflow-hidden">
+//       <marquee behavior="scroll" direction="left" scrollAmount={50}>
+//         <div className="flex items-center">
+//           {infiniteLogos.map((logo, index) => (
+//             <div key={index} className="flex-shrink-0 mx-4">
+//               <Image
+//                 src={logo.src}
+//                 alt={logo.alt}
+//                 width={150}
+//                 height={150}
+//                 className="object-contain"
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </marquee>
+//     </div>
+//   );
+// };
+
+// export default SwipeableSlider;

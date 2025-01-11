@@ -16,6 +16,7 @@ import Contact from "@/app/_components/Contact";
 import PromoSection from "@/app/_components/PromoSection";
 import CompanyLogos from "@/app/_components/CompanyLogos";
 import Carousel from "@/app/_components/Carousel";
+import AnimatedSections from "./_components/AnimatedSections";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -63,6 +64,7 @@ export default function Home() {
       <Solutions />
       <Solutions2 />
       <Carousel />
+      <AnimatedSections />
       {/* <FeaturesSection /> */}
       <FeaturesSection2 />
       <AboutSection />
