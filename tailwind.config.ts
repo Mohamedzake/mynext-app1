@@ -9,6 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // animation: {
+      //   slider: "slider 5s linear infinite",
+      // },
+      // keyframes: {
+      //   slider: {
+      //     "0%": { transform: "translateX(0)" },
+      //     "100%": { transform: "translateX(-90%)" }, // Ensures the track moves by 50% of its width
+      //   },
+      // },
       colors: {
         primary: {
           "10": "#ffffff",
