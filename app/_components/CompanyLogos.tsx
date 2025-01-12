@@ -1222,7 +1222,7 @@ const SwipeableSlider: React.FC = () => {
         .slider-track {
           display: flex;
           width: calc(50%);
-          animation: slide 10s linear infinite;
+          animation: slide 17s linear infinite;
           gap: 8px;
         }
 
