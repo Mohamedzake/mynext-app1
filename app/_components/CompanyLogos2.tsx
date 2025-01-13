@@ -1240,7 +1240,7 @@ const SwipeableSlider: React.FC = () => {
         }
       `}</style>
 
-      <div className="slider-track py-2">
+      <div className="slider-track">
         {[...Array(repeatCount)].map((_, i) => (
           <div key={`original-${i}`} className="slide">
             <Image
@@ -1248,7 +1248,7 @@ const SwipeableSlider: React.FC = () => {
               alt={slides[i % slides.length].alt}
               width={150}
               height={150}
-              className="object-contain bg-primary-10 shadow-lg"
+              className="object-contain"
               priority={i < visibleCount}
             />
           </div>

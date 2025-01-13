@@ -17,6 +17,7 @@ import PromoSection from "@/app/_components/PromoSection";
 import CompanyLogos from "@/app/_components/CompanyLogos";
 import Carousel from "@/app/_components/Carousel";
 import AnimatedSections from "./_components/AnimatedSections";
+import CompanyLogos2 from "./_components/CompanyLogos2";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -61,6 +62,7 @@ export default function Home() {
         </div>
       </main>
       <CompanyLogos />
+      {/* <CompanyLogos2 /> */}
       <Solutions />
       <Solutions2 />
       <Carousel />
