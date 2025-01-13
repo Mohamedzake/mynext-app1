@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </main>
       <CompanyLogos />
-      <CompanyLogos2 />
+      {/* <CompanyLogos2 /> */}
       <Solutions />
       <Solutions2 />
       <Carousel />
