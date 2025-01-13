@@ -282,7 +282,7 @@ import { useTranslations } from "next-intl";
 
 import img from "@/public/landing-page.jpeg";
 import CompanyLogos from "../_components/CompanyLogos";
-
+import Froms from "../_components/Froms";
 export default function Home() {
   const t = useTranslations("landing2");
 
@@ -291,8 +291,55 @@ export default function Home() {
       <main className="relative pt-8 h-auto">
         <Header />
 
-        <section className="flex flex-col lg:flex-row items-center justify-between px-2 sm:px-10 py-10 bg-primary-10 rounded-lg mx-auto">
-          {/* Form Section */}
+        <div className="bg-primary-10 py-24">
+          <header className="text-center py-8">
+            <h1 className="text-2xl font-bold text-blue-900">
+              احصل اليوم على تطبيق ماي كاش
+            </h1>
+            <p className="text-gray-700 text-lg">
+              الحل الذكي لإدارة المبيعات والمدفوعات بكل سهولة
+            </p>
+          </header>
+
+          <main className="max-w-6xl mx-auto px-4 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/hero.jpeg"
+                  alt="Image 1"
+                  className="rounded-lg shadow-md h-full object-cover"
+                  width={300}
+                  height={500}
+                />
+                <Image
+                  src="/hero.jpeg"
+                  alt="Image 2"
+                  className="rounded-lg shadow-md h-full object-cover"
+                  width={300}
+                  height={500}
+                />
+                <Image
+                  src="/hero.jpeg"
+                  alt="Image 3"
+                  className="rounded-lg shadow-md h-full object-cover"
+                  width={300}
+                  height={500}
+                />
+                <Image
+                  src="/hero.jpeg"
+                  alt="Image 4"
+                  className="rounded-lg shadow-md h-full object-cover"
+                  width={300}
+                  height={500}
+                />
+              </div>
+              <Froms />
+            </div>
+          </main>
+        </div>
+
+        {/* <section className="flex flex-col lg:flex-row items-center justify-between px-2 sm:px-10 py-10 bg-primary-10 rounded-lg mx-auto">
+        
           <div className="bg-gray-50 p-2 sm:p-8 mt-10 rounded-lg shadow-lg lg:w-5/12 w-full mb-8 lg:mb-0">
             <h2 className="text-lg font-semibold text-gray-700 mb-4 text-center lg:text-right">
               {t("formHeader")}
@@ -332,7 +379,7 @@ export default function Home() {
             </form>
           </div>
 
-          {/* Image Section */}
+        
           <div className="relative lg:w-7/12 w-full flex justify-center lg:justify-end p-0 lg:p-10">
             <Image
               src={img}
@@ -340,7 +387,7 @@ export default function Home() {
               className="rounded-lg object-cover w-full shadow-lg"
             />
           </div>
-        </section>
+        </section> */}
       </main>
       <CompanyLogos />
       <WhyChooseMyCash />
