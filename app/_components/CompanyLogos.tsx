@@ -1208,7 +1208,7 @@ const SwipeableSlider: React.FC = () => {
   const repeatCount = 20;
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden bg-slate-50">
       <style jsx>{`
         @keyframes slide {
           0% {

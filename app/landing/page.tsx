@@ -283,6 +283,8 @@ import { useTranslations } from "next-intl";
 import img from "@/public/landing-page.jpeg";
 import CompanyLogos from "../_components/CompanyLogos";
 import Froms from "../_components/Froms";
+import FeaturesLanding from "../_components/FeaturesLanding";
+import CompanyLogosright from "../_components/CompanyLogosright";
 export default function Home() {
   const t = useTranslations("landing2");
 
@@ -291,7 +293,7 @@ export default function Home() {
       <main className="relative pt-8 h-auto">
         <Header />
 
-        <div className="bg-primary-10 py-24">
+        <div className="bg-slate-50 py-24">
           <header className="text-center py-8">
             <h1 className="text-2xl font-bold text-blue-900">
               احصل اليوم على تطبيق ماي كاش
@@ -389,9 +391,13 @@ export default function Home() {
           </div>
         </section> */}
       </main>
+      {/* <CompanyLogos /> */}
+      <FeaturesLanding />
+      <CompanyLogosright />
       <CompanyLogos />
-      <WhyChooseMyCash />
-      <WhyChooseMyCash2 />
+      {/* <CompanyLogosright /> */}
+      {/* <WhyChooseMyCash />
+      <WhyChooseMyCash2 /> */}
       <Contact />
       <Footer />
     </div>
