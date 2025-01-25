@@ -285,6 +285,7 @@ import CompanyLogos from "../_components/CompanyLogos";
 import Froms from "../_components/Froms";
 import FeaturesLanding from "../_components/FeaturesLanding";
 import CompanyLogosright from "../_components/CompanyLogosright";
+import CompanyLogos2 from "../_components/CompanyLogos2";
 export default function Home() {
   const t = useTranslations("landing2");
 
@@ -391,13 +392,14 @@ export default function Home() {
           </div>
         </section> */}
       </main>
-      {/* <CompanyLogos /> */}
+
       <FeaturesLanding />
-      <CompanyLogosright />
-      <CompanyLogos />
-      {/* <CompanyLogosright /> */}
-      {/* <WhyChooseMyCash />
-      <WhyChooseMyCash2 /> */}
+      <div className=" flex justify-center items-center flex-col">
+        <CompanyLogos />
+        <CompanyLogos2 />
+        <CompanyLogos />
+      </div>
+
       <Contact />
       <Footer />
     </div>

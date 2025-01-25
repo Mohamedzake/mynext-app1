@@ -61,7 +61,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <CompanyLogos />
+      <div className="flex justify-center">
+        <CompanyLogos />
+      </div>
       {/* <CompanyLogos2 /> */}
       <Solutions />
       <Solutions2 />
