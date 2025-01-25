@@ -284,8 +284,9 @@ import img from "@/public/landing-page.jpeg";
 import CompanyLogos from "../_components/CompanyLogos";
 import Froms from "../_components/Froms";
 import FeaturesLanding from "../_components/FeaturesLanding";
-import CompanyLogosright from "../_components/CompanyLogosright";
+import CompanyLogosright from "../_components/CompanyLogos3";
 import CompanyLogos2 from "../_components/CompanyLogos2";
+import CompanyLogos3 from "../_components/CompanyLogos3";
 export default function Home() {
   const t = useTranslations("landing2");
 
@@ -397,7 +398,7 @@ export default function Home() {
       <div className=" flex justify-center items-center flex-col">
         <CompanyLogos />
         <CompanyLogos2 />
-        <CompanyLogos />
+        <CompanyLogos3 />
       </div>
 
       <Contact />
